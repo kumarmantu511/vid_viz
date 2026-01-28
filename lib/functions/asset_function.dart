@@ -528,6 +528,9 @@ extension AssetFunction on DirectorService {
 
       final String ltype = layer.type;
       final bool layerHasPlayer = (ltype == 'raster' || ltype == 'audio');
+      if (!layerHasPlayer) {
+        cloned.begin = original.begin + original.duration;
+      }
       if (layerHasPlayer) {
         refreshCalculatedFieldsInAssets(li, insertIndex);
 

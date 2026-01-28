@@ -45,9 +45,15 @@ static CMSampleBufferRef vvCopySampleBufferWithShift(CMSampleBufferRef sb, CMTim
     for (auto& ti : infos) {
         if (CMTIME_IS_VALID(ti.presentationTimeStamp)) {
             ti.presentationTimeStamp = CMTimeAdd(ti.presentationTimeStamp, shift);
+            if (CMTIME_IS_VALID(ti.presentationTimeStamp) && CMTIME_COMPARE_INLINE(ti.presentationTimeStamp, <, kCMTimeZero)) {
+                ti.presentationTimeStamp = kCMTimeZero;
+            }
         }
         if (CMTIME_IS_VALID(ti.decodeTimeStamp)) {
             ti.decodeTimeStamp = CMTimeAdd(ti.decodeTimeStamp, shift);
+            if (CMTIME_IS_VALID(ti.decodeTimeStamp) && CMTIME_COMPARE_INLINE(ti.decodeTimeStamp, <, kCMTimeZero)) {
+                ti.decodeTimeStamp = kCMTimeZero;
+            }
         }
     }
 
@@ -294,10 +300,12 @@ bool AVFoundationEncoder::start() {
         AVAssetWriterInput* audioInput = (__bridge AVAssetWriterInput*)m_audioInput;
         dispatch_queue_t q = (__bridge dispatch_queue_t)m_audioQueue;
         const AudioTrack t = m_audioTracks[0];
-        const CMTime shift = CMTimeSubtract(CMTimeMake(static_cast<int64_t>(t.startTime), 1000), CMTimeMake(static_cast<int64_t>(t.cutFrom), 1000));
+        const CMTime desiredStart = CMTimeMake(static_cast<int64_t>(t.startTime), 1000);
 
         __block bool finished = false;
         __block bool signaled = false;
+        __block bool hasShift = false;
+        __block CMTime shift = kCMTimeZero;
         void* encPtr = this;
 
         [audioInput requestMediaDataWhenReadyOnQueue:q usingBlock:^{
@@ -308,6 +316,18 @@ bool AVFoundationEncoder::start() {
                         [audioInput markAsFinished];
                         finished = true;
                         break;
+                    }
+
+                    if (!hasShift) {
+                        CMTime firstPts = CMSampleBufferGetPresentationTimeStamp(sb);
+                        if (!CMTIME_IS_VALID(firstPts) || CMTIME_IS_INDEFINITE(firstPts)) {
+                            firstPts = kCMTimeZero;
+                        }
+                        shift = CMTimeSubtract(desiredStart, firstPts);
+                        if (CMTIME_IS_VALID(shift) && CMTIME_COMPARE_INLINE(shift, <, kCMTimeZero)) {
+                            shift = kCMTimeZero;
+                        }
+                        hasShift = true;
                     }
 
                     CMSampleBufferRef shifted = vvCopySampleBufferWithShift(sb, shift);

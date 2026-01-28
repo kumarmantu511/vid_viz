@@ -602,12 +602,25 @@ Result Engine::submitJob(const std::string& jobJson) {
         }
     }
 
+    // If duration is still unknown/0 (e.g., image-only jobs with duration=0 assets),
+    // ensure we render at least one frame so AVAssetWriter doesn't fail with an empty timeline.
+    if (totalDurationMs <= 0 && settings.fps > 0 && m_currentJob) {
+        TimeMs oneFrameMs = static_cast<TimeMs>(std::llround(1000.0 / static_cast<double>(settings.fps)));
+        if (oneFrameMs < 1) oneFrameMs = 1;
+        totalDurationMs = oneFrameMs;
+        m_currentJob->totalDuration = oneFrameMs;
+        if (m_timeline) {
+            m_timeline->setDuration(oneFrameMs);
+        }
+        LOGW("VIDVIZ_ERROR: Job totalDuration was 0; forcing minimum duration: %lldms", (long long)oneFrameMs);
+    }
+
     FrameNum frames = 0;
     if (totalDurationMs > 0 && settings.fps > 0) {
         const double exact = (static_cast<double>(totalDurationMs) / 1000.0) * static_cast<double>(settings.fps);
         frames = static_cast<FrameNum>(std::ceil(exact));
-        if (frames < 1) frames = 1;
     }
+    if (frames < 1) frames = 1;
     m_totalFrames.store(frames);
     m_currentFrame.store(0);
 

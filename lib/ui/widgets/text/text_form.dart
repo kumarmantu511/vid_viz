@@ -180,7 +180,7 @@ class _TextFormState extends State<TextForm> {
                   if (_tab == 2)
                   //  Container(
                      // width: MediaQuery.of(context).size.width - 160,
-                    TextAnimationForm(asset),
+                    Expanded(child: TextAnimationForm(asset)),
                    // ),
                 ],
               ),
