@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round">
+
+    <!-- Merkezdeki Elmas (Aynı kaldı, oranları mükemmel) -->
+    <path d="M12 8L15 12L12 16L9 12Z"/>
+
+    <!-- Dikey ve Yatay Titreşimler (Tam sayı zaten, sorunsuz) -->
+    <path d="M12 5V3"/>
+    <path d="M12 19V21"/>
+    <path d="M18 12H20"/>
+    <path d="M4 12H6"/>
+
+    <!-- Köşe Titreşimleri (BUÇUKLU SAYILAR TEMİZLENDİ) -->
+    <!-- Eski: 16.5 -> Yeni: 17 (Tam piksele oturdu) -->
+    <!-- Bu çizgiler merkeze (12,12) tam hizalıdır -->
+    <path d="M17 7L19 5"/>
+    <path d="M7 17L5 19"/>
+    <path d="M17 17L19 19"/>
+    <path d="M7 7L5 5"/>
+
+</svg>

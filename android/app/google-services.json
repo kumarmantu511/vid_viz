@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "807463863613",
+    "project_id": "vidviz-2026",
+    "storage_bucket": "vidviz-2026.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:807463863613:android:ac66c6169980b867d6f154",
+        "android_client_info": {
+          "package_name": "com.vidviz.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "807463863613-02fpc3dj8dee5gep5le3g3mcphsde92o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJUhYNUZdXne4XoTFp-OsbAiNDcoIrBTg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "807463863613-02fpc3dj8dee5gep5le3g3mcphsde92o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

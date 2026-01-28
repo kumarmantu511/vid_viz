@@ -1,0 +1,31 @@
+name: vidviz_engine
+description: VidViz Native Render Engine - High performance GPU-accelerated video export
+version: 0.0.1
+
+environment:
+  sdk: ^3.10.1
+  flutter: '>=3.10.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  ffi: ^2.1.5
+  path: ^1.9.1
+  path_provider: ^2.1.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  ffigen: ^8.0.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        ffiPlugin: true
+        package: com.vidviz.engine
+        pluginClass: VidvizEnginePlugin # Kotlin'deki sınıf isminle aynı olmalı
+
+      ios:
+        ffiPlugin: true

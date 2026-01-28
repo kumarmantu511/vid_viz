@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round">
+
+    <!-- Üst Çizgi (Genişlik 18px: 3'ten 21'e) -->
+    <path d="M3 6h18"/>
+
+    <!-- Dikey Gövde (Tam ortadan aşağı iner) -->
+    <path d="M12 6v15"/>
+
+    <!-- Alt Taban (Opsiyonel: Harfi daha dengeli gösterir) -->
+    <!-- Eğer çok sade istersen bu satırı silebilirsin -->
+    <path d="M9 21h6"/>
+
+</svg>

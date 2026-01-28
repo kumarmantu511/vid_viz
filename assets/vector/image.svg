@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round">
+
+    <!-- Çerçeve (Buçuklu sayılar temizlendi, rx=2 yapıldı) -->
+    <rect x="3" y="5" width="18" height="14" rx="3"/>
+
+    <!-- Dağ (Kenarlara bağlandı, artık havada durmuyor) -->
+    <!-- M4 (Sol kenar içi) -> L20 (Sağ kenar içi) -->
+    <path d="M4 15L9 10L14 15L17 12L20 15"/>
+
+    <!-- Güneş (Biraz büyütüldü ki içi dolu gibi durmasın) -->
+    <circle cx="9" cy="9" r="2"/>
+
+</svg>

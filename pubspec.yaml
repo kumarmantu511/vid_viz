@@ -1,0 +1,554 @@
+name: vidviz
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.7
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.8
+  rxdart: ^0.28.0
+  get_it: ^9.2.0
+  logger: ^2.6.2
+  sqflite: ^2.4.2
+  intl: ^0.20.2
+  open_file: ^3.5.10
+  file_picker: ^10.3.7
+  video_player: ^2.10.1
+  ffmpeg_kit_flutter_new: ^4.1.0
+  firebase_core: ^4.3.0
+  firebase_analytics: ^12.1.0
+  firebase_crashlytics: ^5.0.6
+  flutter_colorpicker: ^1.1.0
+  permission_handler: ^12.0.1
+
+  ##SONRADAN EKLENEN PAKETLER
+  fftea: ^1.5.0+1
+  archive: ^4.0.7
+  share_plus: ^12.0.1
+  photo_manager: ^3.8.3
+  shared_preferences: ^2.5.4
+  google_mobile_ads: ^6.0.0
+  path: ^1.9.1
+  flutter_svg: ^2.2.3
+
+  # FİREBESE FEDDBACK İÇİN KULANICI SORUNALRINI GÖNDERİYOR
+  cloud_firestore: ^6.1.1
+  device_info_plus: ^12.3.0
+  package_info_plus: ^9.0.0
+  firebase_storage: ^13.0.5  # Resmi buluta yüklemek için
+  flutter_image_compress: ^2.4.0 # Resmi küçültmek için şart
+  vector_math: ^2.1.4 # Flutter içinde gömülüdür ama yoksa ekle
+  ## Native Render Engine
+  vidviz_engine:
+    path: ./vidviz_engine
+
+  ###imgly_editor: ^1.64.0
+  ###banuba_sdk: ^3.0.12
+  ###byteplus_vod: ^1.48.100
+
+  ##ESKİDEN DAHİLDİLER
+  ## path: ^1.9.1
+  ## path_provider: ^2.1.5
+
+  ##SONRADAN EKLENEN AMA İŞİMİZE YARAMIYOR ŞUANLIK
+  ## crypto: ^3.0.7
+  ## image_picker: ^1.2.1
+  ## dotted_border: ^3.1.0
+  ## logger_flutter: ^0.7.1
+  ## riverpod: ^3.0.3
+  ## flutter_riverpod: ^3.0.3
+  ## shimmer: ^3.0.0
+  ## uuid: ^4.5.1
+  ## flutter_shaders: ^0.1.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^6.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+  generate: true # <--- BURASI ÇOK ÖNEMLİ (Otomatik kod üretir)
+  shaders:
+    # Splash screen shader
+    - assets/shaders/splash.frag
+
+    # Folder-structured shaders (filters)
+    - assets/shaders/filters/hd_boost.frag
+    - assets/shaders/filters/sharpen.frag
+    - assets/shaders/filters/edge_detect.frag
+    - assets/shaders/filters/pixelate.frag
+    - assets/shaders/filters/posterize.frag
+    - assets/shaders/filters/chrom_aberration.frag
+    - assets/shaders/filters/crt.frag
+    - assets/shaders/filters/swirl.frag
+    - assets/shaders/filters/fisheye.frag
+    - assets/shaders/filters/zoom_blur.frag
+    - assets/shaders/filters/film_grain.frag
+    - assets/shaders/filters/blur.frag
+    - assets/shaders/filters/vignette.frag
+
+    # Folder-structured shaders (effects)
+    - assets/shaders/effects/rain.frag
+    - assets/shaders/effects/rain_glass.frag
+    - assets/shaders/effects/snow.frag
+    - assets/shaders/effects/half_tone.frag
+    - assets/shaders/effects/tiles.frag
+    - assets/shaders/effects/circle_radius.frag
+    - assets/shaders/effects/dunes.frag
+    - assets/shaders/effects/heat_vision.frag
+    - assets/shaders/effects/spectrum.frag
+    - assets/shaders/effects/wave_water.frag
+    - assets/shaders/effects/sphere.frag
+    - assets/shaders/effects/fishe.frag
+    - assets/shaders/effects/water2d.frag
+    - assets/shaders/effects/water.frag
+
+    # Visual Backgrounds (converted Shadertoy → Impeller)
+    - assets/shaders/visual/acid.frag
+    - assets/shaders/visual/acidic.frag
+    - assets/shaders/visual/penrose.frag
+    - assets/shaders/visual/starfield.frag
+    - assets/shaders/visual/chromatic.frag
+    - assets/shaders/visual/amv.frag
+    - assets/shaders/visual/fluid.frag
+    - assets/shaders/visual/signal.frag
+    - assets/shaders/visual/lridescent.frag
+    - assets/shaders/visual/procedural.frag
+    - assets/shaders/visual/sun_water.frag
+    - assets/shaders/visual/pro_nation.frag
+    - assets/shaders/visual/now_nation.frag
+    - assets/shaders/visual/heart.frag
+    - assets/shaders/visual/loli_tun.frag
+    - assets/shaders/visual/plasma_wave.frag
+    - assets/shaders/visual/sinusoid.frag
+
+    # Text shaders
+    - assets/shaders/text/gradient_fill.frag
+    - assets/shaders/text/wave_fill.frag
+    - assets/shaders/text/glitch_fill.frag
+    - assets/shaders/text/neon_glow.frag
+    - assets/shaders/text/metallic_fill.frag
+    - assets/shaders/text/rainbow_fill.frag
+    - assets/shaders/text/chrome_bevel.frag
+    - assets/shaders/text/scanlines.frag
+    - assets/shaders/text/rgb_shift.frag
+    - assets/shaders/text/duotone_map.frag
+    - assets/shaders/text/holo_scan.frag
+    - assets/shaders/text/noise_flow.frag
+    - assets/shaders/text/sparkle_glint.frag
+    - assets/shaders/text/liquid_distort.frag
+
+    # Visualizer shaders (Flutter uyumlu olanlar)
+    - assets/shaders/visualizer/bar.frag
+    - assets/shaders/visualizer/nation.frag
+    - assets/shaders/visualizer/wav.frag
+    - assets/shaders/visualizer/sinus.frag
+    - assets/shaders/visualizer/smooth.frag
+    - assets/shaders/visualizer/claude.frag
+    - assets/shaders/visualizer/bar_circle.frag
+    - assets/shaders/visualizer/progress.frag
+    - assets/shaders/visualizer/particle.frag
+    - assets/shaders/visualizer/line.frag
+    - assets/shaders/visualizer/curves.frag
+    - assets/shaders/visualizer/circle.frag
+    - assets/shaders/visualizer/bar_normal.frag
+    - assets/shaders/visualizer/bar_colors.frag
+    - assets/shaders/visualizer/wave.frag
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/
+    # - assets/icons/
+    - assets/social/
+    - assets/vector/
+
+    #- iki sahdes kulanmalıyız çünkü çakışma oluyor tek native için bunu ekledik
+    - assets/native/android/effects/
+    - assets/native/android/filters/
+    - assets/native/android/visual/
+    - assets/native/android/text/
+    - assets/native/android/visualizer/
+
+    - assets/native/ios/effects/
+    - assets/native/ios/filters/
+    - assets/native/ios/visual/
+    - assets/native/ios/text/
+    - assets/native/ios/visualizer/
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/to/resolution-aware-images
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/to/asset-from-package
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: Ethnocentric
+      fonts:
+      - asset: fonts/Ethnocentric/ethnocentric-rg.ttf
+      - asset: fonts/Ethnocentric/ethnocentric-rg-it.ttf
+        style: italic
+
+    - family: Freedom
+      fonts:
+      - asset: fonts/Freedom/Freedom-10eM.ttf
+      - asset: fonts/Freedom/Freedom-nZ4J.otf
+
+    - family: Amaranth
+      fonts:
+        - asset: fonts/Amaranth/Amaranth-Bold.ttf
+          weight: 700
+        - asset: fonts/Amaranth/Amaranth-BoldItalic.ttf
+          weight: 700
+          style: italic
+        - asset: fonts/Amaranth/Amaranth-Italic.ttf
+          weight: 400
+          style: italic
+        - asset: fonts/Amaranth/Amaranth-Regular.ttf
+          weight: 400
+    - family: Bangers
+      fonts:
+        - asset: fonts/Bangers/Bangers-Regular.ttf
+          weight: 400
+    - family: CarterOne
+      fonts:
+        - asset: fonts/Carter_One/CarterOne-Regular.ttf
+          weight: 400
+    - family: Chilanka
+      fonts:
+        - asset: fonts/Chilanka/Chilanka-Regular.ttf
+          weight: 400
+    - family: Courgette
+      fonts:
+        - asset: fonts/Courgette/Courgette-Regular.ttf
+          weight: 400
+    - family: DancingScript
+      fonts:
+        - asset: fonts/Dancing_Script/DancingScript-Bold.ttf
+          weight: 700
+        - asset: fonts/Dancing_Script/DancingScript-Regular.ttf
+          weight: 400
+    - family: GochiHand
+      fonts:
+        - asset: fonts/Gochi_Hand/GochiHand-Regular.ttf
+          weight: 400
+    - family: Grenze
+      fonts:
+        - asset: fonts/Grenze/Grenze-Black.ttf
+          weight: 900
+        - asset: fonts/Grenze/Grenze-BlackItalic.ttf
+          weight: 900
+          style: italic
+        - asset: fonts/Grenze/Grenze-Bold.ttf
+          weight: 700
+        - asset: fonts/Grenze/Grenze-BoldItalic.ttf
+          weight: 700
+          style: italic
+        - asset: fonts/Grenze/Grenze-ExtraBold.ttf
+          weight: 800
+        - asset: fonts/Grenze/Grenze-ExtraBoldItalic.ttf
+          weight: 800
+          style: italic
+        - asset: fonts/Grenze/Grenze-ExtraLight.ttf
+          weight: 200
+        - asset: fonts/Grenze/Grenze-ExtraLightItalic.ttf
+          weight: 200
+          style: italic
+        - asset: fonts/Grenze/Grenze-Italic.ttf
+          weight: 400
+          style: italic
+        - asset: fonts/Grenze/Grenze-Light.ttf
+          weight: 300
+        - asset: fonts/Grenze/Grenze-LightItalic.ttf
+          weight: 300
+          style: italic
+        - asset: fonts/Grenze/Grenze-Medium.ttf
+          weight: 500
+        - asset: fonts/Grenze/Grenze-MediumItalic.ttf
+          weight: 500
+          style: italic
+        - asset: fonts/Grenze/Grenze-Regular.ttf
+          weight: 400
+        - asset: fonts/Grenze/Grenze-SemiBold.ttf
+          weight: 600
+        - asset: fonts/Grenze/Grenze-SemiBoldItalic.ttf
+          weight: 600
+          style: italic
+        - asset: fonts/Grenze/Grenze-Thin.ttf
+          weight: 100
+        - asset: fonts/Grenze/Grenze-ThinItalic.ttf
+          weight: 100
+          style: italic
+    - family: Handlee
+      fonts:
+        - asset: fonts/Handlee/Handlee-Regular.ttf
+          weight: 400
+    - family: IndieFlower
+      fonts:
+        - asset: fonts/Indie_Flower/IndieFlower-Regular.ttf
+          weight: 400
+    - family: Lato
+      fonts:
+        - asset: fonts/Lato/Lato-Black.ttf
+          weight: 900
+        - asset: fonts/Lato/Lato-BlackItalic.ttf
+          weight: 900
+          style: italic
+        - asset: fonts/Lato/Lato-Bold.ttf
+          weight: 700
+        - asset: fonts/Lato/Lato-BoldItalic.ttf
+          weight: 700
+          style: italic
+        - asset: fonts/Lato/Lato-Light.ttf
+          weight: 300
+        - asset: fonts/Lato/Lato-LightItalic.ttf
+          weight: 300
+          style: italic
+        - asset: fonts/Lato/Lato-Regular.ttf
+          weight: 400
+        - asset: fonts/Lato/Lato-RegularItalic.ttf
+          weight: 400
+          style: italic
+        - asset: fonts/Lato/Lato-Thin.ttf
+          weight: 100
+        - asset: fonts/Lato/Lato-ThinItalic.ttf
+          weight: 100
+          style: italic
+    - family: LibreFranklin
+      fonts:
+        - asset: fonts/Libre_Franklin/LibreFranklin-Black.ttf
+          weight: 900
+        - asset: fonts/Libre_Franklin/LibreFranklin-BlackItalic.ttf
+          weight: 900
+          style: italic
+        - asset: fonts/Libre_Franklin/LibreFranklin-Bold.ttf
+          weight: 700
+        - asset: fonts/Libre_Franklin/LibreFranklin-BoldItalic.ttf
+          weight: 700
+          style: italic
+        - asset: fonts/Libre_Franklin/LibreFranklin-ExtraBold.ttf
+          weight: 800
+        - asset: fonts/Libre_Franklin/LibreFranklin-ExtraBoldItalic.ttf
+          weight: 800
+          style: italic
+        - asset: fonts/Libre_Franklin/LibreFranklin-ExtraLight.ttf
+          weight: 200
+        - asset: fonts/Libre_Franklin/LibreFranklin-ExtraLightItalic.ttf
+          weight: 200
+          style: italic
+        - asset: fonts/Libre_Franklin/LibreFranklin-Italic.ttf
+          weight: 400
+          style: italic
+        - asset: fonts/Libre_Franklin/LibreFranklin-Light.ttf
+          weight: 300
+        - asset: fonts/Libre_Franklin/LibreFranklin-LightItalic.ttf
+          weight: 300
+          style: italic
+        - asset: fonts/Libre_Franklin/LibreFranklin-Medium.ttf
+          weight: 500
+        - asset: fonts/Libre_Franklin/LibreFranklin-MediumItalic.ttf
+          weight: 500
+          style: italic
+        - asset: fonts/Libre_Franklin/LibreFranklin-Regular.ttf
+          weight: 400
+        - asset: fonts/Libre_Franklin/LibreFranklin-SemiBold.ttf
+          weight: 600
+        - asset: fonts/Libre_Franklin/LibreFranklin-SemiBoldItalic.ttf
+          weight: 600
+          style: italic
+        - asset: fonts/Libre_Franklin/LibreFranklin-Thin.ttf
+          weight: 100
+        - asset: fonts/Libre_Franklin/LibreFranklin-ThinItalic.ttf
+          weight: 100
+          style: italic
+    - family: Lobster
+      fonts:
+        - asset: fonts/Lobster/Lobster-Regular.ttf
+          weight: 400
+    - family: LuckiestGuy
+      fonts:
+        - asset: fonts/Luckiest_Guy/LuckiestGuy-Regular.ttf
+          weight: 400
+    - family: Mansalva
+      fonts:
+        - asset: fonts/Mansalva/Mansalva-Regular.ttf
+          weight: 400
+    - family: Merriweather
+      fonts:
+        - asset: fonts/Merriweather/Merriweather-Black.ttf
+          weight: 900
+        - asset: fonts/Merriweather/Merriweather-BlackItalic.ttf
+          weight: 900
+          style: italic
+        - asset: fonts/Merriweather/Merriweather-Bold.ttf
+          weight: 700
+        - asset: fonts/Merriweather/Merriweather-BoldItalic.ttf
+          weight: 700
+          style: italic
+        - asset: fonts/Merriweather/Merriweather-Italic.ttf
+          weight: 400
+          style: italic
+        - asset: fonts/Merriweather/Merriweather-Light.ttf
+          weight: 300
+        - asset: fonts/Merriweather/Merriweather-LightItalic.ttf
+          weight: 300
+          style: italic
+        - asset: fonts/Merriweather/Merriweather-Regular.ttf
+          weight: 400
+    - family: OpenSans
+      fonts:
+        - asset: fonts/Open_Sans/OpenSans-Bold.ttf
+          weight: 700
+        - asset: fonts/Open_Sans/OpenSans-BoldItalic.ttf
+          weight: 700
+          style: italic
+        - asset: fonts/Open_Sans/OpenSans-ExtraBold.ttf
+          weight: 800
+        - asset: fonts/Open_Sans/OpenSans-ExtraBoldItalic.ttf
+          weight: 800
+          style: italic
+        - asset: fonts/Open_Sans/OpenSans-Italic.ttf
+          weight: 400
+          style: italic
+        - asset: fonts/Open_Sans/OpenSans-Light.ttf
+          weight: 300
+        - asset: fonts/Open_Sans/OpenSans-LightItalic.ttf
+          weight: 300
+          style: italic
+        - asset: fonts/Open_Sans/OpenSans-Regular.ttf
+          weight: 400
+        - asset: fonts/Open_Sans/OpenSans-SemiBold.ttf
+          weight: 600
+        - asset: fonts/Open_Sans/OpenSans-SemiBoldItalic.ttf
+          weight: 600
+          style: italic
+    - family: Pacifico
+      fonts:
+        - asset: fonts/Pacifico/Pacifico-Regular.ttf
+          weight: 400
+    - family: PermanentMarker
+      fonts:
+        - asset: fonts/Permanent_Marker/PermanentMarker-Regular.ttf
+          weight: 400
+    - family: Righteous
+      fonts:
+        - asset: fonts/Righteous/Righteous-Regular.ttf
+          weight: 400
+    - family: Roboto
+      fonts:
+        - asset: fonts/Roboto/Roboto-Black.ttf
+          weight: 900
+        - asset: fonts/Roboto/Roboto-BlackItalic.ttf
+          weight: 900
+          style: italic
+        - asset: fonts/Roboto/Roboto-Bold.ttf
+          weight: 700
+        - asset: fonts/Roboto/Roboto-BoldItalic.ttf
+          weight: 700
+          style: italic
+        - asset: fonts/Roboto/Roboto-Italic.ttf
+          weight: 400
+          style: italic
+        - asset: fonts/Roboto/Roboto-Light.ttf
+          weight: 300
+        - asset: fonts/Roboto/Roboto-LightItalic.ttf
+          weight: 300
+          style: italic
+        - asset: fonts/Roboto/Roboto-Medium.ttf
+          weight: 500
+        - asset: fonts/Roboto/Roboto-MediumItalic.ttf
+          weight: 500
+          style: italic
+        - asset: fonts/Roboto/Roboto-Regular.ttf
+          weight: 400
+        - asset: fonts/Roboto/Roboto-RegularItalic.ttf
+          weight: 400
+          style: italic
+        - asset: fonts/Roboto/Roboto-Thin.ttf
+          weight: 100
+        - asset: fonts/Roboto/Roboto-ThinItalic.ttf
+          weight: 100
+          style: italic
+    - family: SourceSansPro
+      fonts:
+        - asset: fonts/Source_Sans_Pro/SourceSansPro-Black.ttf
+          weight: 900
+        - asset: fonts/Source_Sans_Pro/SourceSansPro-BlackItalic.ttf
+          weight: 900
+          style: italic
+        - asset: fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf
+          weight: 700
+        - asset: fonts/Source_Sans_Pro/SourceSansPro-BoldItalic.ttf
+          weight: 700
+          style: italic
+        - asset: fonts/Source_Sans_Pro/SourceSansPro-ExtraLight.ttf
+          weight: 200
+        - asset: fonts/Source_Sans_Pro/SourceSansPro-ExtraLightItalic.ttf
+          weight: 200
+          style: italic
+        - asset: fonts/Source_Sans_Pro/SourceSansPro-Italic.ttf
+          weight: 400
+          style: italic
+        - asset: fonts/Source_Sans_Pro/SourceSansPro-Light.ttf
+          weight: 300
+        - asset: fonts/Source_Sans_Pro/SourceSansPro-LightItalic.ttf
+          weight: 300
+          style: italic
+        - asset: fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf
+          weight: 400
+        - asset: fonts/Source_Sans_Pro/SourceSansPro-SemiBold.ttf
+          weight: 600
+        - asset: fonts/Source_Sans_Pro/SourceSansPro-SemiBoldItalic.ttf
+          weight: 600
+          style: italic
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/to/font-from-package

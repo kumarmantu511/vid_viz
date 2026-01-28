@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round">
+
+    <!-- Üst elmas -->
+    <path d="M12 3L15.5 7.5L12 12L8.5 7.5L12 3Z"/>
+
+    <!-- Sol alt elmas -->
+    <path d="M6.5 11L10 15.5L6.5 20L3 15.5L6.5 11Z"/>
+
+    <!-- Sağ alt elmas -->
+    <path d="M17.5 11L21 15.5L17.5 20L14 15.5L17.5 11Z"/>
+
+</svg>

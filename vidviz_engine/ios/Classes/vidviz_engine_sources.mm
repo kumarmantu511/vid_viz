@@ -1,0 +1,18 @@
+#include "../../native/common/log.cpp"
+#include "../../native/common/minijson.cpp"
+
+#include "../../native/core/timeline/timeline.cpp"
+#include "../../native/core/parser/job_parser.cpp"
+#include "../../native/core/effects/shader_manager.cpp"
+#include "../../native/core/engine.cpp"
+
+#include "../../native/platform/ios/metal_export_session.mm"
+#include "../../native/platform/ios/metal_renderer.mm"
+#include "../../native/platform/ios/text/text_parser_ios.mm"
+#include "../../native/platform/ios/text/text_rasterizer_ios.mm"
+#include "../../native/platform/ios/text/text_anim_ios.mm"
+#include "../../native/platform/ios/text/text_renderer_ios_pipelines.mm"
+#include "../../native/platform/ios/text/text_renderer_ios_effect.mm"
+#include "../../native/platform/ios/text/text_renderer_ios_render.mm"
+#include "../../native/platform/ios/avfoundation_encoder.mm"
+#include "../../native/platform/ios/ios_bridge.mm"

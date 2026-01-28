@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round">
+
+    <!-- Kutu: Üst sınır 14, Alt sınır 20 -->
+    <path d="M21 14v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
+
+    <!-- Ok: Uç nokta 4, Alt sap 14 -->
+    <polyline points="17 9 12 4 7 9"/>
+    <line x1="12" y1="4" x2="12" y2="14"/>
+
+</svg>

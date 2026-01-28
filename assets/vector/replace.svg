@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round">
+
+    <!-- Üst Döngü (Sağa) -->
+    <!-- Dikey: 11'de biter (Tam orta -1) -->
+    <path d="M5 11V7a2 2 0 0 1 2-2h11"/>
+    <!-- Ok ucu: Tam 18,5 noktasında -->
+    <polyline points="15 2 18 5 15 8"/>
+
+    <!-- Alt Döngü (Sola) -->
+    <!-- Dikey: 13'te başlar (Tam orta +1) -->
+    <path d="M19 13v4a2 2 0 0 1-2 2H6"/>
+    <!-- Ok ucu: Tam 6,19 noktasında -->
+    <polyline points="9 16 6 19 9 22"/>
+
+</svg>

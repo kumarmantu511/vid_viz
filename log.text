@@ -1,0 +1,931 @@
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+D/ViewRootImpl[MainActivity](12796): processMotionEvent MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=552.0, y[0]=2102.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443211739, downTime=443211739, deviceId=-1, source=0x5002, displayId=0 }
+D/ViewRootImpl[MainActivity](12796): dispatchPointerEvent handled=true, event=MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=552.0, y[0]=2102.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443211739, downTime=443211739, deviceId=-1, source=0x5002, displayId=0 }
+D/ViewRootImpl[MainActivity](12796): processMotionEvent MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=552.0, y[0]=2102.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443211840, downTime=443211739, deviceId=-1, source=0x5002, displayId=0 }
+D/ViewRootImpl[MainActivity](12796): dispatchPointerEvent handled=true, event=MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=552.0, y[0]=2102.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443211840, downTime=443211739, deviceId=-1, source=0x5002, displayId=0 }
+E/Parcel  (12796): Reading a NULL string not supported here.
+I/chatty  (12796): uid=11105(com.vidviz.app) pool-9-thread-1 identical 21 lines
+E/Parcel  (12796): Reading a NULL string not supported here.
+E/Parcel  (12796): Reading a NULL string not supported here.
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+I/com.vidviz.app(12796): Background concurrent copying GC freed 30616(3577KB) AllocSpace objects, 73(15MB) LOS objects, 49% free, 16MB/32MB, paused 98us total 105.731ms
+D/ViewRootImpl[MainActivity](12796): processMotionEvent MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=395.0, y[0]=1520.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443213808, downTime=443213808, deviceId=-1, source=0x5002, displayId=0 }
+D/ViewRootImpl[MainActivity](12796): dispatchPointerEvent handled=true, event=MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=395.0, y[0]=1520.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443213808, downTime=443213808, deviceId=-1, source=0x5002, displayId=0 }
+D/ViewRootImpl[MainActivity](12796): processMotionEvent MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=395.0, y[0]=1520.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443213884, downTime=443213808, deviceId=-1, source=0x5002, displayId=0 }
+D/ViewRootImpl[MainActivity](12796): dispatchPointerEvent handled=true, event=MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=395.0, y[0]=1520.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443213884, downTime=443213808, deviceId=-1, source=0x5002, displayId=0 }
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+D/ViewRootImpl[MainActivity](12796): processMotionEvent MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=795.0, y[0]=2020.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443217169, downTime=443217169, deviceId=-1, source=0x5002, displayId=0 }
+D/ViewRootImpl[MainActivity](12796): dispatchPointerEvent handled=true, event=MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=795.0, y[0]=2020.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443217169, downTime=443217169, deviceId=-1, source=0x5002, displayId=0 }
+D/ViewRootImpl[MainActivity](12796): processMotionEvent MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=795.0, y[0]=2020.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443217327, downTime=443217169, deviceId=-1, source=0x5002, displayId=0 }
+D/ViewRootImpl[MainActivity](12796): dispatchPointerEvent handled=true, event=MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=795.0, y[0]=2020.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443217327, downTime=443217169, deviceId=-1, source=0x5002, displayId=0 }
+E/Parcel  (12796): Reading a NULL string not supported here.
+E/Parcel  (12796): Reading a NULL string not supported here.
+I/flutter (12796): >> DirectorService.mediaAdd(AssetType.image)
+I/flutter (12796): _addAssetToLayer: /storage/emulated/0/Alarms/https___dev-to-uploads.s3.amazon.webp
+I/flutter (12796): ➕ [LayerPlayer] Adding media source for asset 1: https___dev-to-uploads.s3.amazon.webp
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 📸 History saved: index=4, stack size=5
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): >> DirectorService.mediaAdd(AssetType.audio)
+I/flutter (12796): _addAssetToLayer: /storage/emulated/0/Alarms/Rihanna Don t Stop The Music MrRevillz Remix.mp3
+I/flutter (12796): ⏸️ [LayerPlayer] Playback stopped
+I/ExoPlayerImpl(12796): Release de65ad1 [AndroidXMedia3/1.8.0] [OP47DD, CPH1917, OPPO, 30] [media3.common, media3.exoplayer, media3.decoder, media3.datasource, media3.extractor]
+I/ACodec  (12796): [OMX.qcom.video.decoder.avc] signalFlush
+D/ACodec  (12796): [OMX.qcom.video.decoder.avc] Now Executing
+I/ACodec  (12796): [OMX.qcom.video.decoder.avc] signalResume
+D/ACodec  (12796): [OMX.qcom.video.decoder.avc] Now Executing->Idle
+D/ACodec  (12796): [OMX.qcom.video.decoder.avc] Now Idle->Loaded
+D/ACodec  (12796): [OMX.qcom.video.decoder.avc] Now Loaded
+D/SurfaceUtils(12796): disconnecting from surface 0x7bf11e6010, reason disconnectFromSurface
+I/flutter (12796): 🧹 [LayerPlayer] Controller disposed
+D/ACodec  (12796): Now uninitialized
+D/OplusACodec(12796): ~OplusACodec [127]: 
+I/ACodec  (12796): ~ACodec()
+I/ExoPlayerImpl(12796): Init 2d0eeb6 [AndroidXMedia3/1.8.0] [OP47DD, CPH1917, OPPO, 30]
+E/Parcel  (12796): Reading a NULL string not supported here.
+D/ACodec  (12796): ACodec() ro.oplus.audio.effect.type = dolby ro.oplus.audio.dolby.type = v351
+I/ACodec  (12796): new ACodec()
+D/ACodec  (12796): Now uninitialized
+D/OplusACodec(12796): OplusACodec [113]: 
+D/OplusACodec(12796): getBufferChannel: New
+I/OMXClient(12796): IOmx service obtained
+I/ACodec  (12796): Successfully allocate component [OMX.qcom.video.decoder.avc]
+D/ACodec  (12796): AllocateComponent OMX.qcom.video.decoder.avc success
+D/ACodec  (12796): [OMX.qcom.video.decoder.avc] Now Loaded
+D/SurfaceUtils(12796): connecting to surface 0x7b48e6b010, reason connectToSurface
+I/MediaCodec(12796): [OMX.qcom.video.decoder.avc] setting surface generation to 13103108
+D/SurfaceUtils(12796): disconnecting from surface 0x7b48e6b010, reason connectToSurface(reconnect)
+D/SurfaceUtils(12796): connecting to surface 0x7b48e6b010, reason connectToSurface(reconnect)
+D/RefBase (12796): RefBase: Explicit destruction, weak count = 0 (in 0x7b8cdad7f0)
+W/RefBase (12796): CallStack::getCurrentInternal not linked, returning null
+W/RefBase (12796): CallStack::logStackInternal not linked
+D/OplusACodec(12796): [configureCodec:L822] OplusFeedbackInfo  mFeedbackID:532141600768
+D/IAtlas  (12796): IAtlas::init CallingPid 12796
+D/IAtlas  (12796): IAtlas::init this 0x7bf0dc3b60
+I/ACodec  (12796): configureCodec() mime = video/avc
+D/OplusUtils(12796): ACodec getComponentRole [92]: mime:video/avc
+I/ExtendedACodec(12796): setupVideoDecoder()
+E/OplusACodec(12796): [GetVideoCodingTypeFromMime:L691] mime:video/avc
+I/ExtendedACodec(12796): Decoder will be in frame by frame mode
+D/ACodec  (12796): [OMX.qcom.video.decoder.avc] input format is AMessage(what = 0x00000000) = {
+D/ACodec  (12796):   int32_t adaptive-playback = 1
+D/ACodec  (12796):   int32_t roi-on = 0
+D/ACodec  (12796):   string mime = "video/avc"
+D/ACodec  (12796):   int32_t width = 640
+D/ACodec  (12796):   int32_t height = 360
+D/ACodec  (12796): }
+D/ACodec  (12796): [OMX.qcom.video.decoder.avc] output format is AMessage(what = 0x00000000) = {
+D/ACodec  (12796):   int32_t color-range = 2
+D/ACodec  (12796):   int32_t color-standard = 4
+D/ACodec  (12796):   int32_t color-transfer = 3
+D/ACodec  (12796):   int32_t roi-on = 0
+D/ACodec  (12796):   string mime = "video/raw"
+D/ACodec  (12796):   int32_t stride = 640
+D/ACodec  (12796):   int32_t slice-height = 384
+D/ACodec  (12796):   int32_t color-format = 2141391878
+D/ACodec  (12796):   Rect crop(0, 0, 639, 359)
+D/ACodec  (12796):   int32_t android._dataspace = 259
+D/ACodec  (12796):   Buffer hdr-static-info = {
+D/ACodec  (12796):     00000000:  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  ................
+D/ACodec  (12796):     00000010:  00 00 00 00 00 00 00 00  00                       .........
+D/ACodec  (12796):   }
+D/ACodec  (12796):   int32_t width = 640
+D/ACodec  (12796):   int32_t height = 360
+D/ACodec  (12796): }
+D/ACodec  (12796): [OMX.qcom.video.decoder.avc] Now Loaded->Idle
+D/ACodec  (12796): [OMX.qcom.video.decoder.avc] Allocating 4 buffers of size 7077888 (from 7077888 using PresetByteBuffer) on input port
+D/SurfaceUtils(12796): set up nativeWindow 0x7b48e6b010 for 640x360, color 0x7fa30c06, rotation 0, usage 0x20002900
+D/ACodec  (12796): [OMX.qcom.video.decoder.avc] Now Idle->Executing
+D/ACodec  (12796): [OMX.qcom.video.decoder.avc] Now Executing
+D/ACodec  (12796): [OMX.qcom.video.decoder.avc] output format is AMessage(what = 0x00000000) = {
+D/ACodec  (12796):   int32_t color-range = 2
+D/ACodec  (12796):   int32_t color-standard = 4
+D/ACodec  (12796):   int32_t color-transfer = 3
+D/ACodec  (12796):   int32_t roi-on = 0
+D/ACodec  (12796):   string mime = "video/raw"
+D/ACodec  (12796):   int32_t stride = 640
+D/ACodec  (12796):   int32_t slice-height = 384
+D/ACodec  (12796):   int32_t color-format = 2141391878
+D/ACodec  (12796):   Rect crop(0, 0, 639, 359)
+D/ACodec  (12796):   int32_t android._dataspace = 259
+D/ACodec  (12796):   Buffer hdr-static-info = {
+D/ACodec  (12796):     00000000:  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  ................
+D/ACodec  (12796):     00000010:  00 00 00 00 00 00 00 00  00                       .........
+D/ACodec  (12796):   }
+D/ACodec  (12796):   int32_t width = 640
+D/ACodec  (12796):   int32_t height = 368
+D/ACodec  (12796): }
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 📸 History saved: index=5, stack size=6
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): ✅ [LayerPlayer] Controller initialized for: https___dev-to-uploads.s3.amazon.webp
+I/flutter (12796): ℹ️ [LayerPlayer] Media source added - Duration: 1:00:00.000000
+I/com.vidviz.app(12796): Background concurrent copying GC freed 5862(4472KB) AllocSpace objects, 158(33MB) LOS objects, 49% free, 18MB/36MB, paused 91us total 141.370ms
+I/flutter (12796): ➕ [LayerPlayer] Adding media source for asset 0: Rihanna Don t Stop The Music MrRevillz Remix.mp3
+I/flutter (12796): ! [LayerPlayer] Controller not initialized, cannot stop
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 📸 History saved: index=6, stack size=7
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+I/ExoPlayerImpl(12796): Init eea16a8 [AndroidXMedia3/1.8.0] [OP47DD, CPH1917, OPPO, 30]
+D/CCodec  (12796): allocate(c2.android.mp3.decoder)
+D/BufferPoolAccessor2.0(12796): bufferpool2 0x7b54b57428 : 0(0 size) total buffers - 0(0 size) used buffers - 1/6 (recycle/alloc) - 5/24 (fetch/transfer)
+D/BufferPoolAccessor2.0(12796): Destruction - bufferpool2 0x7b54b57428 cached: 0/0M, 0/0% in use; allocs: 6, 17% recycled; transfers: 24, 79% unfetched
+D/BufferPoolAccessor2.0(12796): bufferpool2 0x7b548c6228 : 0(0 size) total buffers - 0(0 size) used buffers - 1/6 (recycle/alloc) - 5/24 (fetch/transfer)
+D/BufferPoolAccessor2.0(12796): Destruction - bufferpool2 0x7b548c6228 cached: 0/0M, 0/0% in use; allocs: 6, 17% recycled; transfers: 24, 79% unfetched
+I/CCodec  (12796): Created component [c2.android.mp3.decoder]
+D/CCodecConfig(12796): read media type: audio/mpeg
+D/ReflectedParamUpdater(12796): extent() != 1 for single value type: algo.buffers.max-count.values
+D/ReflectedParamUpdater(12796): extent() != 1 for single value type: output.subscribed-indices.values
+D/ReflectedParamUpdater(12796): extent() != 1 for single value type: input.buffers.allocator-ids.values
+D/ReflectedParamUpdater(12796): extent() != 1 for single value type: output.buffers.allocator-ids.values
+D/ReflectedParamUpdater(12796): extent() != 1 for single value type: algo.buffers.allocator-ids.values
+D/ReflectedParamUpdater(12796): extent() != 1 for single value type: output.buffers.pool-ids.values
+D/ReflectedParamUpdater(12796): extent() != 1 for single value type: algo.buffers.pool-ids.values
+I/CCodecConfig(12796): query failed after returning 7 values (BAD_INDEX)
+D/CCodecConfig(12796): c2 config diff is Dict {
+D/CCodecConfig(12796):   c2::u32 coded.bitrate.value = 64000
+D/CCodecConfig(12796):   c2::u32 input.buffers.max-size.value = 8192
+D/CCodecConfig(12796):   c2::u32 input.delay.value = 0
+D/CCodecConfig(12796):   string input.media-type.value = "audio/mpeg"
+D/CCodecConfig(12796):   string output.media-type.value = "audio/raw"
+D/CCodecConfig(12796):   c2::u32 raw.channel-count.value = 2
+D/CCodecConfig(12796):   c2::u32 raw.sample-rate.value = 44100
+D/CCodecConfig(12796): }
+D/CCodec  (12796): [c2.android.mp3.decoder] buffers are bound to CCodec for this session
+D/CCodecConfig(12796): no c2 equivalents for flags
+D/CCodecConfig(12796): config failed => CORRUPTED
+W/Codec2Client(12796): query -- param skipped: index = 1107298332.
+D/CCodec  (12796): client requested max input size 4096, which is smaller than what component recommended (8192); overriding with component recommendation.
+W/CCodec  (12796): This behavior is subject to change. It is recommended that app developers double check whether the requested max input size is in reasonable range.
+D/CCodec  (12796): setup formats input: AMessage(what = 0x00000000) = {
+D/CCodec  (12796):   int32_t channel-count = 2
+D/CCodec  (12796):   int32_t max-input-size = 8192
+D/CCodec  (12796):   string mime = "audio/mpeg"
+D/CCodec  (12796):   int32_t sample-rate = 44100
+D/CCodec  (12796): } and output: AMessage(what = 0x00000000) = {
+D/CCodec  (12796):   int32_t channel-count = 2
+D/CCodec  (12796):   string mime = "audio/raw"
+D/CCodec  (12796):   int32_t sample-rate = 44100
+D/CCodec  (12796): }
+W/Codec2Client(12796): query -- param skipped: index = 1342179345.
+W/Codec2Client(12796): query -- param skipped: index = 2415921170.
+E/FMQ     (12796): grantorIdx must be less than 3
+E/FMQ     (12796): grantorIdx must be less than 3
+D/CCodecBufferChannel(12796): [c2.android.mp3.decoder#105] Created input block pool with allocatorID 16 => poolID 19 - OK (0)
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 📸 History saved: index=7, stack size=8
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+I/CCodecBufferChannel(12796): [c2.android.mp3.decoder#105] Created output block pool with allocatorID 16 => poolID 995 - OK
+D/CCodecBufferChannel(12796): [c2.android.mp3.decoder#105] Configured output block pool ids 995 => OK
+D/CCodecBufferChannel(12796): [c2.android.mp3.decoder#105] start: updating output delay 0
+E/FMQ     (12796): grantorIdx must be less than 3
+E/FMQ     (12796): grantorIdx must be less than 3
+D/AudioTrack(12796): set() streamType -1, sampleRate 44100, format 0x1, channelMask 0x3, frameCount 14144, flags #0, notificationFrames 0, sessionId 7697, transferType 3, uid -1, pid -1 cbf 1
+D/AudioTrack(12796): gATLogLevel = 0
+D/AudioTrack(12796): set(): Building AudioTrack with attributes: usage=1 content=3 flags=0xa00 tags=[]
+D/AudioTrack(12796): createTrack state 0 output.outputId=21
+D/AudioTrack(12796): setVolume left 1.000 right 1.000 , callingPid 12796
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 [AudioPerf][PCM] cache_hit readMs=242 totalMs=354 bytes=35182268 samples=8795567 mode=preview path=/storage/emulated/0/Alarms/Rihanna Don t Stop The Music MrRevillz Remix.mp3
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): ✅ [LayerPlayer] Controller initialized for: Rihanna Don t Stop The Music MrRevillz Remix.mp3
+I/flutter (12796): ℹ️ [LayerPlayer] Media source added - Duration: 0:03:19.497000
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+D/CCodecBufferChannel(12796): [c2.android.mp3.decoder#105] DEBUG: elapsed: n=4 [in=0 pipeline=0 out=0 smoothness=4]
+D/PipelineWatcher(12796): DEBUG: elapsed 0 / 4
+D/ViewRootImpl[MainActivity](12796): processMotionEvent MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=902.0, y[0]=2120.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443222427, downTime=443222427, deviceId=-1, source=0x5002, displayId=0 }
+D/ViewRootImpl[MainActivity](12796): dispatchPointerEvent handled=true, event=MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=902.0, y[0]=2120.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443222427, downTime=443222427, deviceId=-1, source=0x5002, displayId=0 }
+D/ViewRootImpl[MainActivity](12796): processMotionEvent MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=902.0, y[0]=2120.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443222526, downTime=443222427, deviceId=-1, source=0x5002, displayId=0 }
+D/ViewRootImpl[MainActivity](12796): dispatchPointerEvent handled=true, event=MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=902.0, y[0]=2120.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443222526, downTime=443222427, deviceId=-1, source=0x5002, displayId=0 }
+I/flutter (12796): >> DirectorService.add(AssetType.visualizer)
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 VisualizerService.startAddingVisualizer()
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 Using audio source: /storage/emulated/0/Alarms/Rihanna Don t Stop The Music MrRevillz Remix.mp3
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 Processing audio for FFT: /storage/emulated/0/Alarms/Rihanna Don t Stop The Music MrRevillz Remix.mp3|b=64|a=0.600|min=50.0|max=16000.0
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 [AudioPerf][PCM] cache_hit readMs=99 totalMs=818 bytes=35182268 samples=8795567 mode=preview path=/storage/emulated/0/Alarms/Rihanna Don t Stop The Music MrRevillz Remix.mp3
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 [AudioPerf][FFT][Visualizer] start samples=8795567 bands=64 hop=512
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+D/BufferPoolAccessor2.0(12796): evictor expired: 2, evicted: 0
+D/BufferPoolAccessor2.0(12796): bufferpool2 0x7be61f7428 : 5(40960 size) total buffers - 4(32768 size) used buffers - 0/5 (recycle/alloc) - 4/42 (fetch/transfer)
+D/BufferPoolAccessor2.0(12796): evictor expired: 1, evicted: 1
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+D/ViewRootImpl[MainActivity](12796): processMotionEvent MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=870.0, y[0]=1002.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443226398, downTime=443226398, deviceId=-1, source=0x5002, displayId=0 }
+D/ViewRootImpl[MainActivity](12796): dispatchPointerEvent handled=true, event=MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=870.0, y[0]=1002.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443226398, downTime=443226398, deviceId=-1, source=0x5002, displayId=0 }
+D/ViewRootImpl[MainActivity](12796): processMotionEvent MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=870.0, y[0]=1002.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443226520, downTime=443226398, deviceId=-1, source=0x5002, displayId=0 }
+D/ViewRootImpl[MainActivity](12796): dispatchPointerEvent handled=true, event=MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=870.0, y[0]=1002.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443226520, downTime=443226398, deviceId=-1, source=0x5002, displayId=0 }
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 💾 SAVE Visualizer: renderMode=shader, shaderType=bar, color=ffffffff
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 Visualizer EKLENDI (overlay layer): color=ffffffff
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 📸 History saved: index=8, stack size=9
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 [AudioPerf][FFT][Visualizer] done ms=4827 frames=17175 bands=64 hop=512
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 📦 FFT cache size: 2/5
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 FFT processing completed. Frames: 17175
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+D/ViewRootImpl[MainActivity](12796): processMotionEvent MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=945.0, y[0]=2095.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443228234, downTime=443228234, deviceId=-1, source=0x5002, displayId=0 }
+D/ViewRootImpl[MainActivity](12796): dispatchPointerEvent handled=true, event=MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=945.0, y[0]=2095.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443228234, downTime=443228234, deviceId=-1, source=0x5002, displayId=0 }
+D/ViewRootImpl[MainActivity](12796): processMotionEvent MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=266.0, y[0]=2095.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443228661, downTime=443228234, deviceId=-1, source=0x5002, displayId=0 }
+D/ViewRootImpl[MainActivity](12796): dispatchPointerEvent handled=true, event=MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=266.0, y[0]=2095.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443228661, downTime=443228234, deviceId=-1, source=0x5002, displayId=0 }
+D/ViewRootImpl[MainActivity](12796): processMotionEvent MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=802.0, y[0]=2102.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443229354, downTime=443229354, deviceId=-1, source=0x5002, displayId=0 }
+D/ViewRootImpl[MainActivity](12796): dispatchPointerEvent handled=true, event=MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=802.0, y[0]=2102.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443229354, downTime=443229354, deviceId=-1, source=0x5002, displayId=0 }
+D/ViewRootImpl[MainActivity](12796): processMotionEvent MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=802.0, y[0]=2102.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443229451, downTime=443229354, deviceId=-1, source=0x5002, displayId=0 }
+D/ViewRootImpl[MainActivity](12796): dispatchPointerEvent handled=true, event=MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=802.0, y[0]=2102.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443229451, downTime=443229354, deviceId=-1, source=0x5002, displayId=0 }
+I/flutter (12796): >> DirectorService.addMediaOverlay()
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+D/ViewRootImpl[MainActivity](12796): processMotionEvent MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=534.0, y[0]=1309.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443230773, downTime=443230773, deviceId=-1, source=0x5002, displayId=0 }
+D/ViewRootImpl[MainActivity](12796): dispatchPointerEvent handled=true, event=MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=534.0, y[0]=1309.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443230773, downTime=443230773, deviceId=-1, source=0x5002, displayId=0 }
+D/ViewRootImpl[MainActivity](12796): processMotionEvent MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=534.0, y[0]=1309.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443230883, downTime=443230773, deviceId=-1, source=0x5002, displayId=0 }
+D/ViewRootImpl[MainActivity](12796): dispatchPointerEvent handled=true, event=MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=534.0, y[0]=1309.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443230883, downTime=443230773, deviceId=-1, source=0x5002, displayId=0 }
+I/flutter (12796): 🎬 Source selected: https___dev-to-uploads.s3.amazon.webp (AssetType.image)
+D/ViewRootImpl[MainActivity](12796): processMotionEvent MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=795.0, y[0]=977.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443231583, downTime=443231583, deviceId=-1, source=0x5002, displayId=0 }
+D/ViewRootImpl[MainActivity](12796): dispatchPointerEvent handled=true, event=MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=795.0, y[0]=977.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443231583, downTime=443231583, deviceId=-1, source=0x5002, displayId=0 }
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+D/ViewRootImpl[MainActivity](12796): processMotionEvent MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=795.0, y[0]=977.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443231912, downTime=443231583, deviceId=-1, source=0x5002, displayId=0 }
+D/ViewRootImpl[MainActivity](12796): dispatchPointerEvent handled=true, event=MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=795.0, y[0]=977.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443231912, downTime=443231583, deviceId=-1, source=0x5002, displayId=0 }
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 Media Overlay EKLENDI (overlay layer): https___dev-to-uploads.s3.amazon.webp
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 📸 History saved: index=9, stack size=10
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+D/ViewRootImpl[MainActivity](12796): processMotionEvent MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=978.0, y[0]=2102.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443233215, downTime=443233215, deviceId=-1, source=0x5002, displayId=0 }
+D/ViewRootImpl[MainActivity](12796): dispatchPointerEvent handled=true, event=MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=978.0, y[0]=2102.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443233215, downTime=443233215, deviceId=-1, source=0x5002, displayId=0 }
+D/ViewRootImpl[MainActivity](12796): processMotionEvent MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=495.0, y[0]=2127.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443233714, downTime=443233215, deviceId=-1, source=0x5002, displayId=0 }
+D/ViewRootImpl[MainActivity](12796): dispatchPointerEvent handled=true, event=MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=495.0, y[0]=2127.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443233714, downTime=443233215, deviceId=-1, source=0x5002, displayId=0 }
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+D/ViewRootImpl[MainActivity](12796): processMotionEvent MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=870.0, y[0]=2102.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443235993, downTime=443235993, deviceId=-1, source=0x5002, displayId=0 }
+D/ViewRootImpl[MainActivity](12796): dispatchPointerEvent handled=true, event=MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=870.0, y[0]=2102.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443235993, downTime=443235993, deviceId=-1, source=0x5002, displayId=0 }
+D/ViewRootImpl[MainActivity](12796): processMotionEvent MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=502.0, y[0]=2134.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443236508, downTime=443235993, deviceId=-1, source=0x5002, displayId=0 }
+D/ViewRootImpl[MainActivity](12796): dispatchPointerEvent handled=true, event=MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=502.0, y[0]=2134.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443236508, downTime=443235993, deviceId=-1, source=0x5002, displayId=0 }
+I/Ads     (12796): Use RequestConfiguration.Builder().setTestDeviceIds(Arrays.asList("F02F31246B26CA2B7F0A5B585DD82697")) to get test ads on this device.
+I/AudioManager(12796): In isSpeakerphoneOn(), calling application: com.vidviz.app
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+E/Parcel  (12796): Reading a NULL string not supported here.
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=0, streamType=2
+W/ServiceBindIntentUtils(12796): Dynamic lookup for intent failed for action: com.google.android.gms.ads.service.CACHE
+E/Parcel  (12796): Reading a NULL string not supported here.
+W/ServiceBindIntentUtils(12796): Dynamic lookup for intent failed for action: com.google.android.gms.ads.service.START
+E/Parcel  (12796): Reading a NULL string not supported here.
+I/Ads     (12796): Use RequestConfiguration.Builder().setTestDeviceIds(Arrays.asList("F02F31246B26CA2B7F0A5B585DD82697")) to get test ads on this device.
+E/Parcel  (12796): Reading a NULL string not supported here.
+I/AudioManager(12796): In isSpeakerphoneOn(), calling application: com.vidviz.app
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=0, streamType=2
+W/Ads     (12796): Not retrying to fetch app settings
+E/Parcel  (12796): Reading a NULL string not supported here.
+D/ViewRootImpl[MainActivity](12796): processMotionEvent MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=1003.0, y[0]=2116.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443237704, downTime=443237704, deviceId=-1, source=0x5002, displayId=0 }
+D/ViewRootImpl[MainActivity](12796): dispatchPointerEvent handled=true, event=MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=1003.0, y[0]=2116.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443237704, downTime=443237704, deviceId=-1, source=0x5002, displayId=0 }
+D/ViewRootImpl[MainActivity](12796): processMotionEvent MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=1003.0, y[0]=2116.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443237841, downTime=443237704, deviceId=-1, source=0x5002, displayId=0 }
+D/ViewRootImpl[MainActivity](12796): dispatchPointerEvent handled=true, event=MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=1003.0, y[0]=2116.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443237841, downTime=443237704, deviceId=-1, source=0x5002, displayId=0 }
+I/flutter (12796): >> DirectorService.addAudioReactive()
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+E/Parcel  (12796): Reading a NULL string not supported here.
+E/Parcel  (12796): Reading a NULL string not supported here.
+I/DynamiteModule(12796): Considering local module com.google.android.gms.ads.dynamite:0 and remote module com.google.android.gms.ads.dynamite:254380203
+I/DynamiteModule(12796): Selected remote version of com.google.android.gms.ads.dynamite, version >= 254380203
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+E/libEGL  (12796): Invalid file path for libcolorx-loader.so
+I/chatty  (12796): uid=11105(com.vidviz.app) RenderThread identical 1 line
+E/libEGL  (12796): Invalid file path for libcolorx-loader.so
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+E/libEGL  (12796): Invalid file path for libcolorx-loader.so
+I/chatty  (12796): uid=11105(com.vidviz.app) RenderThread identical 8 lines
+E/libEGL  (12796): Invalid file path for libcolorx-loader.so
+E/FrameEvents(12796): updateAcquireFence: Did not find frame.
+E/Parcel  (12796): Reading a NULL string not supported here.
+I/DynamiteModule(12796): Considering local module com.google.android.gms.ads.dynamite:0 and remote module com.google.android.gms.ads.dynamite:254380203
+I/DynamiteModule(12796): Selected remote version of com.google.android.gms.ads.dynamite, version >= 254380203
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+E/FrameEvents(12796): updateAcquireFence: Did not find frame.
+D/ViewRootImpl[MainActivity](12796): processMotionEvent MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=520.0, y[0]=1220.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443238941, downTime=443238941, deviceId=-1, source=0x5002, displayId=0 }
+D/ViewRootImpl[MainActivity](12796): dispatchPointerEvent handled=true, event=MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=520.0, y[0]=1220.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443238941, downTime=443238941, deviceId=-1, source=0x5002, displayId=0 }
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+E/FrameEvents(12796): updateAcquireFence: Did not find frame.
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+E/FrameEvents(12796): updateAcquireFence: Did not find frame.
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+D/ViewRootImpl[MainActivity](12796): processMotionEvent MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=520.0, y[0]=1220.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443239070, downTime=443238941, deviceId=-1, source=0x5002, displayId=0 }
+D/ViewRootImpl[MainActivity](12796): dispatchPointerEvent handled=true, event=MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=520.0, y[0]=1220.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443239070, downTime=443238941, deviceId=-1, source=0x5002, displayId=0 }
+E/FrameEvents(12796): updateAcquireFence: Did not find frame.
+E/libEGL  (12796): Invalid file path for libcolorx-loader.so
+I/chatty  (12796): uid=11105(com.vidviz.app) RenderThread identical 11 lines
+E/libEGL  (12796): Invalid file path for libcolorx-loader.so
+E/FrameEvents(12796): updateAcquireFence: Did not find frame.
+E/FrameEvents(12796): updateAcquireFence: Did not find frame.
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+E/FrameEvents(12796): updateAcquireFence: Did not find frame.
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+E/Parcel  (12796): Reading a NULL string not supported here.
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+D/ViewRootImpl[MainActivity](12796): processMotionEvent MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=33.0, y[0]=1341.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443240677, downTime=443240677, deviceId=-1, source=0x5002, displayId=0 }
+D/ViewRootImpl[MainActivity](12796): dispatchPointerEvent handled=true, event=MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=33.0, y[0]=1341.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443240677, downTime=443240677, deviceId=-1, source=0x5002, displayId=0 }
+D/ViewRootImpl[MainActivity](12796): processMotionEvent MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=41.0, y[0]=1341.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443240764, downTime=443240677, deviceId=-1, source=0x5002, displayId=0 }
+D/ViewRootImpl[MainActivity](12796): dispatchPointerEvent handled=true, event=MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=41.0, y[0]=1341.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443240764, downTime=443240677, deviceId=-1, source=0x5002, displayId=0 }
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+D/ViewRootImpl[MainActivity](12796): processMotionEvent MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=967.0, y[0]=1027.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443241366, downTime=443241366, deviceId=-1, source=0x5002, displayId=0 }
+D/ViewRootImpl[MainActivity](12796): dispatchPointerEvent handled=true, event=MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=967.0, y[0]=1027.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443241366, downTime=443241366, deviceId=-1, source=0x5002, displayId=0 }
+D/ViewRootImpl[MainActivity](12796): processMotionEvent MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=967.0, y[0]=1019.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443241462, downTime=443241366, deviceId=-1, source=0x5002, displayId=0 }
+D/ViewRootImpl[MainActivity](12796): dispatchPointerEvent handled=true, event=MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=967.0, y[0]=1019.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443241462, downTime=443241366, deviceId=-1, source=0x5002, displayId=0 }
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 Audio Reactive EKLENDI (audio_reactive layer): Audio Reactive
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 📸 History saved: index=10, stack size=11
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+D/ViewRootImpl[MainActivity](12796): processMotionEvent MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=784.0, y[0]=1302.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443242330, downTime=443242330, deviceId=-1, source=0x5002, displayId=0 }
+D/ViewRootImpl[MainActivity](12796): dispatchPointerEvent handled=true, event=MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=784.0, y[0]=1302.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443242330, downTime=443242330, deviceId=-1, source=0x5002, displayId=0 }
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 [AudioReactive] Processing audio for FFT: /storage/emulated/0/Alarms/Rihanna Don t Stop The Music MrRevillz Remix.mp3
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 [AudioReactive] FFT cache miss for /storage/emulated/0/Alarms/Rihanna Don t Stop The Music MrRevillz Remix.mp3 at 416 ms
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 [AR] input id=ar_1769436388961969 target=ast_1769436377599574 audioPath=/storage/emulated/0/Alarms/Rihanna Don t Stop The Music MrRevillz Remix.mp3 localMs=416 posMs=416 level=0.349 freq=all sens=1.2 smooth=0.2 min=1.0 max=1.1 invert=false mode=sim
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 [AR_APPLY] id=ar_1769436388961969 target=ast_1769436377599574 type=scale audio=0.349 filtered=0.349 level=0.419 value=1.042 posMs=416
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+I/ExoPlayerImpl(12796): Init 5e27544 [AndroidXMedia3/1.8.0] [OP47DD, CPH1917, OPPO, 30]
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 [AR] input id=ar_1769436388961969 target=ast_1769436377599574 audioPath=/storage/emulated/0/Alarms/Rihanna Don t Stop The Music MrRevillz Remix.mp3 localMs=1783 posMs=1783 level=0.103 freq=all sens=1.2 smooth=0.2 min=1.0 max=1.1 invert=false mode=sim
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 [AR_APPLY] id=ar_1769436388961969 target=ast_1769436377599574 type=scale audio=0.103 filtered=0.103 level=0.232 value=1.023 posMs=1783
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+D/ACodec  (12796): ACodec() ro.oplus.audio.effect.type = dolby ro.oplus.audio.dolby.type = v351
+I/ACodec  (12796): new ACodec()
+D/ACodec  (12796): Now uninitialized
+D/OplusACodec(12796): OplusACodec [113]: 
+D/OplusACodec(12796): getBufferChannel: New
+I/OMXClient(12796): IOmx service obtained
+I/ACodec  (12796): Successfully allocate component [OMX.qcom.video.decoder.avc]
+D/ACodec  (12796): AllocateComponent OMX.qcom.video.decoder.avc success
+D/ACodec  (12796): [OMX.qcom.video.decoder.avc] Now Loaded
+D/SurfaceUtils(12796): connecting to surface 0x7b36ac5010, reason connectToSurface
+I/MediaCodec(12796): [OMX.qcom.video.decoder.avc] setting surface generation to 13103109
+D/SurfaceUtils(12796): disconnecting from surface 0x7b36ac5010, reason connectToSurface(reconnect)
+D/SurfaceUtils(12796): connecting to surface 0x7b36ac5010, reason connectToSurface(reconnect)
+D/RefBase (12796): RefBase: Explicit destruction, weak count = 0 (in 0x7b1e1fb7f0)
+W/RefBase (12796): CallStack::getCurrentInternal not linked, returning null
+W/RefBase (12796): CallStack::logStackInternal not linked
+D/OplusACodec(12796): [configureCodec:L822] OplusFeedbackInfo  mFeedbackID:528719672320
+D/IAtlas  (12796): IAtlas::init CallingPid 12796
+D/IAtlas  (12796): IAtlas::init this 0x7bf0dc51b0
+I/ACodec  (12796): configureCodec() mime = video/avc
+D/OplusUtils(12796): ACodec getComponentRole [92]: mime:video/avc
+I/ExtendedACodec(12796): setupVideoDecoder()
+E/OplusACodec(12796): [GetVideoCodingTypeFromMime:L691] mime:video/avc
+I/ExtendedACodec(12796): Decoder will be in frame by frame mode
+D/ACodec  (12796): [OMX.qcom.video.decoder.avc] input format is AMessage(what = 0x00000000) = {
+D/ACodec  (12796):   int32_t adaptive-playback = 1
+D/ACodec  (12796):   int32_t roi-on = 0
+D/ACodec  (12796):   string mime = "video/avc"
+D/ACodec  (12796):   int32_t width = 640
+D/ACodec  (12796):   int32_t height = 360
+D/ACodec  (12796): }
+D/ACodec  (12796): [OMX.qcom.video.decoder.avc] output format is AMessage(what = 0x00000000) = {
+D/ACodec  (12796):   int32_t color-range = 2
+D/ACodec  (12796):   int32_t color-standard = 4
+D/ACodec  (12796):   int32_t color-transfer = 3
+D/ACodec  (12796):   int32_t roi-on = 0
+D/ACodec  (12796):   string mime = "video/raw"
+D/ACodec  (12796):   int32_t stride = 640
+D/ACodec  (12796):   int32_t slice-height = 384
+D/ACodec  (12796):   int32_t color-format = 2141391878
+D/ACodec  (12796):   Rect crop(0, 0, 639, 359)
+D/ACodec  (12796):   int32_t android._dataspace = 259
+D/ACodec  (12796):   Buffer hdr-static-info = {
+D/ACodec  (12796):     00000000:  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  ................
+D/ACodec  (12796):     00000010:  00 00 00 00 00 00 00 00  00                       .........
+D/ACodec  (12796):   }
+D/ACodec  (12796):   int32_t width = 640
+D/ACodec  (12796):   int32_t height = 360
+D/ACodec  (12796): }
+D/ACodec  (12796): [OMX.qcom.video.decoder.avc] Now Loaded->Idle
+D/ACodec  (12796): [OMX.qcom.video.decoder.avc] Allocating 4 buffers of size 7077888 (from 7077888 using PresetByteBuffer) on input port
+D/SurfaceUtils(12796): set up nativeWindow 0x7b36ac5010 for 640x360, color 0x7fa30c06, rotation 0, usage 0x20002900
+D/ACodec  (12796): [OMX.qcom.video.decoder.avc] Now Idle->Executing
+D/ACodec  (12796): [OMX.qcom.video.decoder.avc] Now Executing
+D/ACodec  (12796): [OMX.qcom.video.decoder.avc] output format is AMessage(what = 0x00000000) = {
+D/ACodec  (12796):   int32_t color-range = 2
+D/ACodec  (12796):   int32_t color-standard = 4
+D/ACodec  (12796):   int32_t color-transfer = 3
+D/ACodec  (12796):   int32_t roi-on = 0
+D/ACodec  (12796):   string mime = "video/raw"
+D/ACodec  (12796):   int32_t stride = 640
+D/ACodec  (12796):   int32_t slice-height = 384
+D/ACodec  (12796):   int32_t color-format = 2141391878
+D/ACodec  (12796):   Rect crop(0, 0, 639, 359)
+D/ACodec  (12796):   int32_t android._dataspace = 259
+D/ACodec  (12796):   Buffer hdr-static-info = {
+D/ACodec  (12796):     00000000:  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  ................
+D/ACodec  (12796):     00000010:  00 00 00 00 00 00 00 00  00                       .........
+D/ACodec  (12796):   }
+D/ACodec  (12796):   int32_t width = 640
+D/ACodec  (12796):   int32_t height = 368
+D/ACodec  (12796): }
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 [AudioPerf][PCM] cache_hit readMs=181 totalMs=216 bytes=35182268 samples=8795567 mode=preview path=/storage/emulated/0/Alarms/Rihanna Don t Stop The Music MrRevillz Remix.mp3
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 [AudioPerf][FFT][AudioReactive] start samples=8795567 hop=512
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+I/com.vidviz.app(12796): Background concurrent copying GC freed 52788(4107KB) AllocSpace objects, 100(8928KB) LOS objects, 42% free, 33MB/57MB, paused 197us total 111.266ms
+I/ExoPlayerImpl(12796): Init c8df6c8 [AndroidXMedia3/1.8.0] [OP47DD, CPH1917, OPPO, 30]
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+D/ACodec  (12796): ACodec() ro.oplus.audio.effect.type = dolby ro.oplus.audio.dolby.type = v351
+I/ACodec  (12796): new ACodec()
+D/ACodec  (12796): Now uninitialized
+D/OplusACodec(12796): OplusACodec [113]: 
+D/OplusACodec(12796): getBufferChannel: New
+I/OMXClient(12796): IOmx service obtained
+D/ViewRootImpl[MainActivity](12796): processMotionEvent MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=620.0, y[0]=1302.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443242896, downTime=443242330, deviceId=-1, source=0x5002, displayId=0 }
+D/ViewRootImpl[MainActivity](12796): dispatchPointerEvent handled=true, event=MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=620.0, y[0]=1302.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443242896, downTime=443242330, deviceId=-1, source=0x5002, displayId=0 }
+I/ACodec  (12796): Successfully allocate component [OMX.qcom.video.decoder.avc]
+D/ACodec  (12796): AllocateComponent OMX.qcom.video.decoder.avc success
+D/ACodec  (12796): [OMX.qcom.video.decoder.avc] Now Loaded
+D/SurfaceUtils(12796): connecting to surface 0x7b86030010, reason connectToSurface
+I/MediaCodec(12796): [OMX.qcom.video.decoder.avc] setting surface generation to 13103110
+D/SurfaceUtils(12796): disconnecting from surface 0x7b86030010, reason connectToSurface(reconnect)
+D/SurfaceUtils(12796): connecting to surface 0x7b86030010, reason connectToSurface(reconnect)
+D/RefBase (12796): RefBase: Explicit destruction, weak count = 0 (in 0x7b1a0fd7f0)
+W/RefBase (12796): CallStack::getCurrentInternal not linked, returning null
+W/RefBase (12796): CallStack::logStackInternal not linked
+D/OplusACodec(12796): [configureCodec:L822] OplusFeedbackInfo  mFeedbackID:532325643264
+D/IAtlas  (12796): IAtlas::init CallingPid 12796
+D/IAtlas  (12796): IAtlas::init this 0x7b8a41d5b0
+I/ACodec  (12796): configureCodec() mime = video/avc
+D/OplusUtils(12796): ACodec getComponentRole [92]: mime:video/avc
+I/ExtendedACodec(12796): setupVideoDecoder()
+E/OplusACodec(12796): [GetVideoCodingTypeFromMime:L691] mime:video/avc
+I/ExtendedACodec(12796): Decoder will be in frame by frame mode
+D/ACodec  (12796): [OMX.qcom.video.decoder.avc] input format is AMessage(what = 0x00000000) = {
+D/ACodec  (12796):   int32_t adaptive-playback = 1
+D/ACodec  (12796):   int32_t roi-on = 0
+D/ACodec  (12796):   string mime = "video/avc"
+D/ACodec  (12796):   int32_t width = 640
+D/ACodec  (12796):   int32_t height = 360
+D/ACodec  (12796): }
+D/ACodec  (12796): [OMX.qcom.video.decoder.avc] output format is AMessage(what = 0x00000000) = {
+D/ACodec  (12796):   int32_t color-range = 2
+D/ACodec  (12796):   int32_t color-standard = 4
+D/ACodec  (12796):   int32_t color-transfer = 3
+D/ACodec  (12796):   int32_t roi-on = 0
+D/ACodec  (12796):   string mime = "video/raw"
+D/ACodec  (12796):   int32_t stride = 640
+D/ACodec  (12796):   int32_t slice-height = 384
+D/ACodec  (12796):   int32_t color-format = 2141391878
+D/ACodec  (12796):   Rect crop(0, 0, 639, 359)
+D/ACodec  (12796):   int32_t android._dataspace = 259
+D/ACodec  (12796):   Buffer hdr-static-info = {
+D/ACodec  (12796):     00000000:  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  ................
+D/ACodec  (12796):     00000010:  00 00 00 00 00 00 00 00  00                       .........
+D/ACodec  (12796):   }
+D/ACodec  (12796):   int32_t width = 640
+D/ACodec  (12796):   int32_t height = 360
+D/ACodec  (12796): }
+D/ACodec  (12796): [OMX.qcom.video.decoder.avc] Now Loaded->Idle
+D/ACodec  (12796): [OMX.qcom.video.decoder.avc] Allocating 4 buffers of size 7077888 (from 7077888 using PresetByteBuffer) on input port
+D/SurfaceUtils(12796): set up nativeWindow 0x7b86030010 for 640x360, color 0x7fa30c06, rotation 0, usage 0x20002900
+D/ACodec  (12796): [OMX.qcom.video.decoder.avc] Now Idle->Executing
+D/ACodec  (12796): [OMX.qcom.video.decoder.avc] Now Executing
+D/ACodec  (12796): [OMX.qcom.video.decoder.avc] output format is AMessage(what = 0x00000000) = {
+D/ACodec  (12796):   int32_t color-range = 2
+D/ACodec  (12796):   int32_t color-standard = 4
+D/ACodec  (12796):   int32_t color-transfer = 3
+D/ACodec  (12796):   int32_t roi-on = 0
+D/ACodec  (12796):   string mime = "video/raw"
+D/ACodec  (12796):   int32_t stride = 640
+D/ACodec  (12796):   int32_t slice-height = 384
+D/ACodec  (12796):   int32_t color-format = 2141391878
+D/ACodec  (12796):   Rect crop(0, 0, 639, 359)
+D/ACodec  (12796):   int32_t android._dataspace = 259
+D/ACodec  (12796):   Buffer hdr-static-info = {
+D/ACodec  (12796):     00000000:  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  ................
+D/ACodec  (12796):     00000010:  00 00 00 00 00 00 00 00  00                       .........
+D/ACodec  (12796):   }
+D/ACodec  (12796):   int32_t width = 640
+D/ACodec  (12796):   int32_t height = 368
+D/ACodec  (12796): }
+I/flutter (12796): 🧰 [LayerPlayer] Preloaded next media at index 1
+I/ExoPlayerImpl(12796): Release 2d0eeb6 [AndroidXMedia3/1.8.0] [OP47DD, CPH1917, OPPO, 30] [media3.common, media3.exoplayer, media3.decoder, media3.datasource, media3.extractor]
+I/ACodec  (12796): [OMX.qcom.video.decoder.avc] signalFlush
+D/ACodec  (12796): [OMX.qcom.video.decoder.avc] Now Executing
+I/ACodec  (12796): [OMX.qcom.video.decoder.avc] signalResume
+D/ACodec  (12796): [OMX.qcom.video.decoder.avc] Now Executing->Idle
+D/ACodec  (12796): [OMX.qcom.video.decoder.avc] Now Idle->Loaded
+D/ACodec  (12796): [OMX.qcom.video.decoder.avc] Now Loaded
+D/SurfaceUtils(12796): disconnecting from surface 0x7b48e6b010, reason disconnectFromSurface
+D/ACodec  (12796): Now uninitialized
+D/OplusACodec(12796): ~OplusACodec [127]: 
+I/ACodec  (12796): ~ACodec()
+D/ViewRootImpl[MainActivity](12796): processMotionEvent MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=902.0, y[0]=1245.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443243245, downTime=443243245, deviceId=-1, source=0x5002, displayId=0 }
+D/ViewRootImpl[MainActivity](12796): dispatchPointerEvent handled=true, event=MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=902.0, y[0]=1245.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443243245, downTime=443243245, deviceId=-1, source=0x5002, displayId=0 }
+I/com.vidviz.app(12796): Background concurrent copying GC freed 3189(4877KB) AllocSpace objects, 213(35MB) LOS objects, 31% free, 51MB/75MB, paused 234us total 172.943ms
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 [AR] input id=ar_1769436388961969 target=ast_1769436377599574 audioPath=/storage/emulated/0/Alarms/Rihanna Don t Stop The Music MrRevillz Remix.mp3 localMs=2899 posMs=2899 level=0.070 freq=all sens=1.2 smooth=0.2 min=1.0 max=1.1 invert=false mode=sim
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 [AR_APPLY] id=ar_1769436388961969 target=ast_1769436377599574 type=scale audio=0.070 filtered=0.070 level=0.195 value=1.019 posMs=2899
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+I/ACodec  (12796): [OMX.qcom.video.decoder.avc] signalFlush
+I/flutter (12796): 👁️ [LayerPlayer] Preview at position 416 (fileSeek: 416)
+I/ACodec  (12796): [OMX.qcom.video.decoder.avc] signalResume
+D/ACodec  (12796): [OMX.qcom.video.decoder.avc] Now Executing
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 [AR] input id=ar_1769436388961969 target=ast_1769436377599574 audioPath=/storage/emulated/0/Alarms/Rihanna Don t Stop The Music MrRevillz Remix.mp3 localMs=4399 posMs=4399 level=0.369 freq=all sens=1.2 smooth=0.2 min=1.0 max=1.1 invert=false mode=sim
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 [AR_APPLY] id=ar_1769436388961969 target=ast_1769436377599574 type=scale audio=0.369 filtered=0.369 level=0.377 value=1.038 posMs=4399
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 [AR] input id=ar_1769436388961969 target=ast_1769436377599574 audioPath=/storage/emulated/0/Alarms/Rihanna Don t Stop The Music MrRevillz Remix.mp3 localMs=5533 posMs=5533 level=0.236 freq=all sens=1.2 smooth=0.2 min=1.0 max=1.1 invert=false mode=sim
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 [AR_APPLY] id=ar_1769436388961969 target=ast_1769436377599574 type=scale audio=0.236 filtered=0.236 level=0.365 value=1.037 posMs=5533
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 [AR] input id=ar_1769436388961969 target=ast_1769436377599574 audioPath=/storage/emulated/0/Alarms/Rihanna Don t Stop The Music MrRevillz Remix.mp3 localMs=6666 posMs=6666 level=0.152 freq=all sens=1.2 smooth=0.2 min=1.0 max=1.1 invert=false mode=sim
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 [AR_APPLY] id=ar_1769436388961969 target=ast_1769436377599574 type=scale audio=0.152 filtered=0.152 level=0.300 value=1.030 posMs=6666
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+I/ACodec  (12796): [OMX.qcom.video.decoder.avc] signalFlush
+D/ACodec  (12796): [OMX.qcom.video.decoder.avc] Now Executing
+I/ACodec  (12796): [OMX.qcom.video.decoder.avc] signalResume
+I/flutter (12796): 👁️ [LayerPlayer] Preview at position 4399 (fileSeek: 4399)
+I/ExoPlayerImpl(12796): Release 5e27544 [AndroidXMedia3/1.8.0] [OP47DD, CPH1917, OPPO, 30] [media3.common, media3.exoplayer, media3.decoder, media3.datasource, media3.extractor]
+I/ACodec  (12796): [OMX.qcom.video.decoder.avc] signalFlush
+D/ACodec  (12796): [OMX.qcom.video.decoder.avc] Now Executing
+I/ACodec  (12796): [OMX.qcom.video.decoder.avc] signalResume
+D/ACodec  (12796): [OMX.qcom.video.decoder.avc] Now Executing->Idle
+D/ACodec  (12796): [OMX.qcom.video.decoder.avc] Now Idle->Loaded
+D/ACodec  (12796): [OMX.qcom.video.decoder.avc] Now Loaded
+D/SurfaceUtils(12796): disconnecting from surface 0x7b36ac5010, reason disconnectFromSurface
+D/ACodec  (12796): Now uninitialized
+D/OplusACodec(12796): ~OplusACodec [127]: 
+I/ACodec  (12796): ~ACodec()
+I/ACodec  (12796): [OMX.qcom.video.decoder.avc] signalFlush
+D/ACodec  (12796): [OMX.qcom.video.decoder.avc] Now Executing
+I/ACodec  (12796): [OMX.qcom.video.decoder.avc] signalResume
+I/flutter (12796): 👁️ [LayerPlayer] Preview at position 7083 (fileSeek: 2083)
+D/ViewRootImpl[MainActivity](12796): processMotionEvent MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=584.0, y[0]=1277.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443243841, downTime=443243245, deviceId=-1, source=0x5002, displayId=0 }
+D/ViewRootImpl[MainActivity](12796): dispatchPointerEvent handled=true, event=MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=584.0, y[0]=1277.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443243841, downTime=443243245, deviceId=-1, source=0x5002, displayId=0 }
+D/ViewRootImpl[MainActivity](12796): processMotionEvent MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=995.0, y[0]=208.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443244557, downTime=443244557, deviceId=-1, source=0x5002, displayId=0 }
+D/ViewRootImpl[MainActivity](12796): dispatchPointerEvent handled=true, event=MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=995.0, y[0]=208.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443244557, downTime=443244557, deviceId=-1, source=0x5002, displayId=0 }
+D/ViewRootImpl[MainActivity](12796): processMotionEvent MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=995.0, y[0]=208.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443244692, downTime=443244557, deviceId=-1, source=0x5002, displayId=0 }
+D/ViewRootImpl[MainActivity](12796): dispatchPointerEvent handled=true, event=MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=995.0, y[0]=208.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443244692, downTime=443244557, deviceId=-1, source=0x5002, displayId=0 }
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+D/ViewRootImpl[MainActivity](12796): processMotionEvent MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=584.0, y[0]=2070.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443246810, downTime=443246810, deviceId=-1, source=0x5002, displayId=0 }
+D/ViewRootImpl[MainActivity](12796): dispatchPointerEvent handled=true, event=MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=584.0, y[0]=2070.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443246810, downTime=443246810, deviceId=-1, source=0x5002, displayId=0 }
+D/ViewRootImpl[MainActivity](12796): processMotionEvent MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=584.0, y[0]=2070.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443246941, downTime=443246810, deviceId=-1, source=0x5002, displayId=0 }
+D/ViewRootImpl[MainActivity](12796): dispatchPointerEvent handled=true, event=MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=584.0, y[0]=2070.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443246941, downTime=443246810, deviceId=-1, source=0x5002, displayId=0 }
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 📸 History saved: index=11, stack size=12
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+E/Parcel  (12796): Reading a NULL string not supported here.
+E/Parcel  (12796): Reading a NULL string not supported here.
+I/DynamiteModule(12796): Considering local module com.google.android.gms.ads.dynamite:0 and remote module com.google.android.gms.ads.dynamite:254380203
+I/DynamiteModule(12796): Selected remote version of com.google.android.gms.ads.dynamite, version >= 254380203
+V/DynamiteModule(12796): Dynamite loader version >= 2, using loadModule2NoCrashUtils
+I/Ads     (12796): Use RequestConfiguration.Builder().setTestDeviceIds(Arrays.asList("F02F31246B26CA2B7F0A5B585DD82697")) to get test ads on this device.
+I/AudioManager(12796): In isSpeakerphoneOn(), calling application: com.vidviz.app
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=0, streamType=2
+E/Parcel  (12796): Reading a NULL string not supported here.
+W/ServiceBindIntentUtils(12796): Dynamic lookup for intent failed for action: com.google.android.gms.ads.service.START
+E/Parcel  (12796): Reading a NULL string not supported here.
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 Initializing native export engine...
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+I/VidVizEngine(12796): Engine created
+I/VidVizEngine(12796): MediaCodecEncoder created
+D/VidVizEngine(12796): ShaderManager created
+I/VidVizEngine(12796): MediaCodecEncoder initialized
+I/VidVizEngine(12796): Engine initialized successfully
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 Native engine initialized successfully
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 Starting native export: export_1769436398787
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 [AudioPerf][Export] start jobId=export_1769436398787
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 ✅ Shader yuklendi: assets/native/android/visualizer/bar.glsl
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 [AudioPerf][Export] shaders_ms=294
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 [ExportFFT] Fallback audio source: /storage/emulated/0/Alarms/Rihanna Don t Stop The Music MrRevillz Remix.mp3
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 [ExportFFT] visualizer source: /storage/emulated/0/Alarms/Rihanna Don t Stop The Music MrRevillz Remix.mp3 bands=64
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 [AudioPerf][ExportFFT] start sources=1
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 [ExportFFT] Reusing cached FFT for /storage/emulated/0/Alarms/Rihanna Don t Stop The Music MrRevillz Remix.mp3 frames=17175
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 [AudioPerf][ExportFFT] src=/storage/emulated/0/Alarms/Rihanna Don t Stop The Music MrRevillz Remix.mp3 mode=visualizer cache_hit frames=17175
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 [ExportFFT] FFT ready for /storage/emulated/0/Alarms/Rihanna Don t Stop The Music MrRevillz Remix.mp3 frames=17175 hop=512 mode=visualizer
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 [AudioPerf][ExportFFT] src=/storage/emulated/0/Alarms/Rihanna Don t Stop The Music MrRevillz Remix.mp3 done ms=24 frames=17175 hop=512 mode=visualizer computedAtSource=false
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 [AudioPerf][ExportFFT] done ms=66 sources=1 out=1
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 [AudioPerf][Export] fft_build_ms=76 fft_sources=1
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 [AudioPerf][Export] visualizer_staging_ms=191
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+I/VidVizEngine(12796): Parsed job: export_1769436398787, 1920x1080 @ 30fps, duration: 199446ms
+I/VidVizEngine(12796): Shader registered: bar
+D/ACodec  (12796): ACodec() ro.oplus.audio.effect.type = dolby ro.oplus.audio.dolby.type = v351
+I/ACodec  (12796): new ACodec()
+D/ACodec  (12796): Now uninitialized
+D/OplusACodec(12796): OplusACodec [113]: 
+D/OplusACodec(12796): getBufferChannel: New
+I/OMXClient(12796): IOmx service obtained
+I/ACodec  (12796): Successfully allocate component [OMX.qcom.video.encoder.avc]
+D/ACodec  (12796): AllocateComponent OMX.qcom.video.encoder.avc success
+D/ACodec  (12796): [OMX.qcom.video.encoder.avc] Now Loaded
+I/VidVizEngine(12796): Using H.264 encoder
+I/VidVizEngine(12796): Configuring for HD/FHD (Level 4.1)
+D/RefBase (12796): RefBase: Explicit destruction, weak count = 0 (in 0x7b8c6bb7f0)
+W/RefBase (12796): CallStack::getCurrentInternal not linked, returning null
+W/RefBase (12796): CallStack::logStackInternal not linked
+D/OplusACodec(12796): [configureCodec:L822] OplusFeedbackInfo  mFeedbackID:532140541952
+D/IAtlas  (12796): IAtlas::init CallingPid 12796
+D/IAtlas  (12796): IAtlas::init this 0x7b73d1c2c0
+I/ACodec  (12796): configureCodec() mime = video/avc
+D/OplusUtils(12796): ACodec getComponentRole [92]: mime:video/avc
+I/ExtendedACodec(12796): setupVideoEncoder()
+W/OMXUtils(12796): do not know color format 0x7fa30c06 = 2141391878
+W/OMXUtils(12796): do not know color format 0x7fa30c04 = 2141391876
+W/OMXUtils(12796): do not know color format 0x7fa30c00 = 2141391872
+W/OMXUtils(12796): do not know color format 0x7fa30c09 = 2141391881
+W/OMXUtils(12796): do not know color format 0x7fa30c0a = 2141391882
+W/OMXUtils(12796): do not know color format 0x7fa30c08 = 2141391880
+W/OMXUtils(12796): do not know color format 0x7fa30c07 = 2141391879
+W/OMXUtils(12796): do not know color format 0x7f000789 = 2130708361
+E/OplusACodec(12796): [GetVideoCodingTypeFromMime:L691] mime:video/avc
+I/ACodec  (12796): setupAVCEncoderParameters with [profile: High] [level: Level41]
+I/ACodec  (12796): [OMX.qcom.video.encoder.avc] cannot encode HDR static metadata. Ignoring.
+I/ACodec  (12796): setupVideoEncoder succeeded
+I/ExtendedACodec(12796): [OMX.qcom.video.encoder.avc] configure, AMessage : AMessage(what = 'conf', target = 29) = {
+I/ExtendedACodec(12796):   string mime = "video/avc"
+I/ExtendedACodec(12796):   int32_t width = 1920
+I/ExtendedACodec(12796):   int32_t height = 1080
+I/ExtendedACodec(12796):   int32_t bitrate = 9953279
+I/ExtendedACodec(12796):   int32_t frame-rate = 30
+I/ExtendedACodec(12796):   int32_t i-frame-interval = 1
+I/ExtendedACodec(12796):   int32_t color-format = 2130708361
+I/ExtendedACodec(12796):   int32_t profile = 8
+I/ExtendedACodec(12796):   int32_t level = 4096
+I/ExtendedACodec(12796):   int32_t bitrate-mode = 1
+I/ExtendedACodec(12796):   int32_t priority = 0
+I/ExtendedACodec(12796):   int32_t flags = 1
+I/ExtendedACodec(12796):   int32_t encoder = 1
+I/ExtendedACodec(12796): }
+W/OMXUtils(12796): do not know color format 0x7f000789 = 2130708361
+D/ACodec  (12796): [OMX.qcom.video.encoder.avc] input format is AMessage(what = 0x00000000) = {
+D/ACodec  (12796):   int32_t roi-on = 0
+D/ACodec  (12796):   string mime = "video/raw"
+D/ACodec  (12796):   int32_t stride = 1920
+D/ACodec  (12796):   int32_t slice-height = 1080
+D/ACodec  (12796):   int32_t color-format = 2130708361
+D/ACodec  (12796):   int32_t color-range = 0
+D/ACodec  (12796):   int32_t color-standard = 0
+D/ACodec  (12796):   int32_t color-transfer = 0
+D/ACodec  (12796):   int32_t width = 1920
+D/ACodec  (12796):   int32_t height = 1080
+D/ACodec  (12796): }
+D/ACodec  (12796): [OMX.qcom.video.encoder.avc] output format is AMessage(what = 0x00000000) = {
+D/ACodec  (12796):   int32_t bitrate = 9953279
+D/ACodec  (12796):   int32_t max-bitrate = 9953279
+D/ACodec  (12796):   int32_t frame-rate = 30
+D/ACodec  (12796):   int32_t roi-on = 0
+D/ACodec  (12796):   string mime = "video/avc"
+D/ACodec  (12796):   int32_t width = 1920
+D/ACodec  (12796):   int32_t height = 1080
+D/ACodec  (12796): }
+I/VidVizEngine(12796): Codec configured successfully
+I/VidVizEngine(12796): Encoder configured: 1920x1080 @ 30fps, bitrate: 9953279
+I/VidVizEngine(12796): Registered audio assets: 1
+I/VidVizEngine(12796): Job submitted: export_1769436398787, duration: 199446ms, frames: 5984
+I/VidVizEngine(12796): Render loop started
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 [AudioPerf][FFT][AudioReactive] done ms=11039 frames=17175 hop=512
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 [AudioReactive] FFT processing completed. Frames: 17175
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+D/ACodec  (12796): [OMX.qcom.video.encoder.avc] Now Loaded->Idle
+D/ACodec  (12796): [OMX.qcom.video.encoder.avc] Allocating 9 buffers of size 8 (from 8 using PresetByteBuffer) on input port
+D/ACodec  (12796): [OMX.qcom.video.encoder.avc] Allocating 6 buffers of size 2088960 (from 2088960 using PresetByteBuffer) on output port
+D/ACodec  (12796): [OMX.qcom.video.encoder.avc] Now Idle->Executing
+D/ACodec  (12796): [OMX.qcom.video.encoder.avc] Now Executing
+D/MPEG4Writer(12796): PreAllocation disabled. fallocate : Operation not supported on transport endpoint, 95
+I/VidVizEngine(12796): Encoder started
+E/libEGL  (12796): Invalid file path for libcolorx-loader.so
+E/libEGL  (12796): Invalid file path for libcolorx-loader.so
+I/VidVizEngine(12796): [AR_NATIVE] frame=0 id=ar_1769436388961969 target=ast_1769436377599574 type=scale freq=all sens=1.200 smooth=0.200 min=1.000 max=1.100 invert=0 offsetMs=0
+I/VidVizEngine(12796): [AR_NATIVE] apply frame=0 id=ar_1769436388961969 audio=0.000 prev=0.000 smooth=0.200 level=0.000 value=1.000 path=/storage/emulated/0/Alarms/Rihanna Don t Stop The Music MrRevillz Remix.mp3 localMs=0
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+E/Parcel  (12796): Reading a NULL string not supported here.
+E/Parcel  (12796): Reading a NULL string not supported here.
+I/DynamiteModule(12796): Considering local module com.google.android.gms.ads.dynamite:0 and remote module com.google.android.gms.ads.dynamite:254380203
+I/DynamiteModule(12796): Selected remote version of com.google.android.gms.ads.dynamite, version >= 254380203
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+I/PlatformViewsController(12796): Hosting view in view hierarchy for platform view: 2
+I/PlatformViewsController(12796): PlatformView is using SurfaceProducer backend
+E/FrameEvents(12796): updateAcquireFence: Did not find frame.
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+E/libEGL  (12796): Invalid file path for libcolorx-loader.so
+I/chatty  (12796): uid=11105(com.vidviz.app) RenderThread identical 11 lines
+E/libEGL  (12796): Invalid file path for libcolorx-loader.so
+E/FrameEvents(12796): updateAcquireFence: Did not find frame.
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+E/FrameEvents(12796): updateAcquireFence: Did not find frame.
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+D/ImageReaderSurfaceProducer(12796): ImageTextureEntry can't wait on the fence on Android < 33
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+E/FrameEvents(12796): updateAcquireFence: Did not find frame.
+E/FrameEvents(12796): updateAcquireFence: Did not find frame.
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+E/FrameEvents(12796): updateAcquireFence: Did not find frame.
+I/chatty  (12796): uid=11105(com.vidviz.app) RenderThread identical 1 line
+E/FrameEvents(12796): updateAcquireFence: Did not find frame.
+D/ViewRootImpl[MainActivity](12796): processKeyEvent KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_CTRL_LEFT, scanCode=0, metaState=META_CTRL_ON, flags=0x0, repeatCount=0, eventTime=443254445, downTime=443254445, deviceId=-1, source=0xffffffff, displayId=-1 }
+D/ACodec  (12796): dataspace changed to 0x10c10000 (R:2(Limited), P:3(BT601_6_625), M:3(BT601_6), T:3(SMPTE170M)) (R:2(Limited), S:2(BT601_625), T:3(SMPTE_170M))
+D/DecorView(12796): dispatchKeyEvent handled=true, KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_CTRL_LEFT, scanCode=0, metaState=META_CTRL_ON, flags=0x0, repeatCount=0, eventTime=443254445, downTime=443254445, deviceId=-1, source=0xffffffff, displayId=-1 }, activity=com.vidviz.app.MainActivity@32ddee6, mFeatureId=-1
+D/DecorView(12796): dispatchKeyEvent handled=false, KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_CTRL_LEFT, scanCode=0, metaState=META_CTRL_ON, flags=0x0, repeatCount=0, eventTime=443254445, downTime=443254445, deviceId=-1, source=0xffffffff, displayId=-1 }, activity=com.vidviz.app.MainActivity@32ddee6, mFeatureId=-1
+D/ViewRootImpl[MainActivity](12796): processKeyEvent KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_A, scanCode=0, metaState=META_CTRL_ON, flags=0x0, repeatCount=0, eventTime=443254450, downTime=443254450, deviceId=-1, source=0xffffffff, displayId=-1 }
+D/MPEG4Writer(12796): fpathconf _PC_FILESIZEBITS:64
+D/MPEG4Writer(12796): File size limit set to 4503599627370495 bytes implicitly
+D/MPEG4Writer(12796): MP4WtrCtrlHlpLooper Started
+I/MPEG4Writer(12796): limits: 4503599627370495/0 bytes/us, bit rate: -1 bps and the estimated moov size 3192 bytes
+D/MPEG4Writer(12796): kWhatNoIOErrorSoFar
+I/VidVizEngine(12796): Muxer started. Track=0
+I/MPEG4Writer(12796): setStartTimestampUs: 0
+I/MPEG4Writer(12796): Earliest track starting time: 0
+D/DecorView(12796): dispatchKeyEvent handled=true, KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_A, scanCode=0, metaState=META_CTRL_ON, flags=0x0, repeatCount=0, eventTime=443254450, downTime=443254450, deviceId=-1, source=0xffffffff, displayId=-1 }, activity=com.vidviz.app.MainActivity@32ddee6, mFeatureId=-1
+D/DecorView(12796): dispatchKeyEvent handled=false, KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_A, scanCode=0, metaState=META_CTRL_ON, flags=0x0, repeatCount=0, eventTime=443254450, downTime=443254450, deviceId=-1, source=0xffffffff, displayId=-1 }, activity=com.vidviz.app.MainActivity@32ddee6, mFeatureId=-1
+E/FrameEvents(12796): updateAcquireFence: Did not find frame.
+D/ViewRootImpl[MainActivity](12796): processKeyEvent KeyEvent { action=ACTION_UP, keyCode=KEYCODE_A, scanCode=0, metaState=META_CTRL_ON, flags=0x0, repeatCount=0, eventTime=443254450, downTime=443254450, deviceId=-1, source=0xffffffff, displayId=-1 }
+D/DecorView(12796): dispatchKeyEvent handled=true, KeyEvent { action=ACTION_UP, keyCode=KEYCODE_A, scanCode=0, metaState=META_CTRL_ON, flags=0x200, repeatCount=0, eventTime=443254450, downTime=443254450, deviceId=-1, source=0xffffffff, displayId=-1 }, activity=com.vidviz.app.MainActivity@32ddee6, mFeatureId=-1
+D/DecorView(12796): dispatchKeyEvent handled=false, KeyEvent { action=ACTION_UP, keyCode=KEYCODE_A, scanCode=0, metaState=META_CTRL_ON, flags=0x200, repeatCount=0, eventTime=443254450, downTime=443254450, deviceId=-1, source=0xffffffff, displayId=-1 }, activity=com.vidviz.app.MainActivity@32ddee6, mFeatureId=-1
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+I/VidVizEngine(12796): [AR_NATIVE] frame=10 id=ar_1769436388961969 target=ast_1769436377599574 type=scale freq=all sens=1.200 smooth=0.200 min=1.000 max=1.100 invert=0 offsetMs=0
+I/VidVizEngine(12796): [AR_NATIVE] apply frame=10 id=ar_1769436388961969 audio=0.115 prev=0.259 smooth=0.200 level=0.162 value=1.016 path=/storage/emulated/0/Alarms/Rihanna Don t Stop The Music MrRevillz Remix.mp3 localMs=333
+D/ViewRootImpl[MainActivity](12796): processKeyEvent KeyEvent { action=ACTION_UP, keyCode=KEYCODE_CTRL_LEFT, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=443254452, downTime=443254452, deviceId=-1, source=0xffffffff, displayId=-1 }
+D/DecorView(12796): dispatchKeyEvent handled=true, KeyEvent { action=ACTION_UP, keyCode=KEYCODE_CTRL_LEFT, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=443254452, downTime=443254452, deviceId=-1, source=0xffffffff, displayId=-1 }, activity=com.vidviz.app.MainActivity@32ddee6, mFeatureId=-1
+D/DecorView(12796): dispatchKeyEvent handled=false, KeyEvent { action=ACTION_UP, keyCode=KEYCODE_CTRL_LEFT, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=443254452, downTime=443254452, deviceId=-1, source=0xffffffff, displayId=-1 }, activity=com.vidviz.app.MainActivity@32ddee6, mFeatureId=-1
+E/FrameEvents(12796): updateAcquireFence: Did not find frame.
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+I/VidVizEngine(12796): [AR_NATIVE] frame=20 id=ar_1769436388961969 target=ast_1769436377599574 type=scale freq=all sens=1.200 smooth=0.200 min=1.000 max=1.100 invert=0 offsetMs=0
+I/VidVizEngine(12796): [AR_NATIVE] apply frame=20 id=ar_1769436388961969 audio=0.104 prev=0.133 smooth=0.200 level=0.126 value=1.013 path=/storage/emulated/0/Alarms/Rihanna Don t Stop The Music MrRevillz Remix.mp3 localMs=667
+E/FrameEvents(12796): updateAcquireFence: Did not find frame.
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+I/VidVizEngine(12796): [AR_NATIVE] frame=30 id=ar_1769436388961969 target=ast_1769436377599574 type=scale freq=all sens=1.200 smooth=0.200 min=1.000 max=1.100 invert=0 offsetMs=0
+I/VidVizEngine(12796): [AR_NATIVE] apply frame=30 id=ar_1769436388961969 audio=0.161 prev=0.138 smooth=0.200 level=0.182 value=1.018 path=/storage/emulated/0/Alarms/Rihanna Don t Stop The Music MrRevillz Remix.mp3 localMs=1000
+I/VidVizEngine(12796): [AR_NATIVE] frame=40 id=ar_1769436388961969 target=ast_1769436377599574 type=scale freq=all sens=1.200 smooth=0.200 min=1.000 max=1.100 invert=0 offsetMs=0
+I/VidVizEngine(12796): [AR_NATIVE] apply frame=40 id=ar_1769436388961969 audio=0.081 prev=0.193 smooth=0.200 level=0.116 value=1.012 path=/storage/emulated/0/Alarms/Rihanna Don t Stop The Music MrRevillz Remix.mp3 localMs=1333
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+I/VidVizEngine(12796): [AR_NATIVE] frame=50 id=ar_1769436388961969 target=ast_1769436377599574 type=scale freq=all sens=1.200 smooth=0.200 min=1.000 max=1.100 invert=0 offsetMs=0
+I/VidVizEngine(12796): [AR_NATIVE] apply frame=50 id=ar_1769436388961969 audio=0.109 prev=0.133 smooth=0.200 level=0.132 value=1.013 path=/storage/emulated/0/Alarms/Rihanna Don t Stop The Music MrRevillz Remix.mp3 localMs=1667
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+I/VidVizEngine(12796): [AR_NATIVE] frame=60 id=ar_1769436388961969 target=ast_1769436377599574 type=scale freq=all sens=1.200 smooth=0.200 min=1.000 max=1.100 invert=0 offsetMs=0
+I/VidVizEngine(12796): [AR_NATIVE] apply frame=60 id=ar_1769436388961969 audio=0.159 prev=0.144 smooth=0.200 level=0.182 value=1.018 path=/storage/emulated/0/Alarms/Rihanna Don t Stop The Music MrRevillz Remix.mp3 localMs=2000
+I/VidVizEngine(12796): [AR_NATIVE] frame=70 id=ar_1769436388961969 target=ast_1769436377599574 type=scale freq=all sens=1.200 smooth=0.200 min=1.000 max=1.100 invert=0 offsetMs=0
+I/VidVizEngine(12796): [AR_NATIVE] apply frame=70 id=ar_1769436388961969 audio=0.077 prev=0.148 smooth=0.200 level=0.104 value=1.010 path=/storage/emulated/0/Alarms/Rihanna Don t Stop The Music MrRevillz Remix.mp3 localMs=2333
+I/VidVizEngine(12796): [AR_NATIVE] frame=80 id=ar_1769436388961969 target=ast_1769436377599574 type=scale freq=all sens=1.200 smooth=0.200 min=1.000 max=1.100 invert=0 offsetMs=0
+I/VidVizEngine(12796): [AR_NATIVE] apply frame=80 id=ar_1769436388961969 audio=0.177 prev=0.129 smooth=0.200 level=0.195 value=1.020 path=/storage/emulated/0/Alarms/Rihanna Don t Stop The Music MrRevillz Remix.mp3 localMs=2667
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+I/VidVizEngine(12796): [AR_NATIVE] frame=90 id=ar_1769436388961969 target=ast_1769436377599574 type=scale freq=all sens=1.200 smooth=0.200 min=1.000 max=1.100 invert=0 offsetMs=0
+I/VidVizEngine(12796): [AR_NATIVE] apply frame=90 id=ar_1769436388961969 audio=0.145 prev=0.212 smooth=0.200 level=0.182 value=1.018 path=/storage/emulated/0/Alarms/Rihanna Don t Stop The Music MrRevillz Remix.mp3 localMs=3000
+I/VidVizEngine(12796): [AR_NATIVE] frame=100 id=ar_1769436388961969 target=ast_1769436377599574 type=scale freq=all sens=1.200 smooth=0.200 min=1.000 max=1.100 invert=0 offsetMs=0
+I/VidVizEngine(12796): [AR_NATIVE] apply frame=100 id=ar_1769436388961969 audio=0.207 prev=0.277 smooth=0.200 level=0.254 value=1.025 path=/storage/emulated/0/Alarms/Rihanna Don t Stop The Music MrRevillz Remix.mp3 localMs=3333
+I/VidVizEngine(12796): [AR_NATIVE] frame=110 id=ar_1769436388961969 target=ast_1769436377599574 type=scale freq=all sens=1.200 smooth=0.200 min=1.000 max=1.100 invert=0 offsetMs=0
+I/VidVizEngine(12796): [AR_NATIVE] apply frame=110 id=ar_1769436388961969 audio=0.098 prev=0.191 smooth=0.200 level=0.133 value=1.013 path=/storage/emulated/0/Alarms/Rihanna Don t Stop The Music MrRevillz Remix.mp3 localMs=3667
+I/VidVizEngine(12796): [AR_NATIVE] frame=120 id=ar_1769436388961969 target=ast_1769436377599574 type=scale freq=all sens=1.200 smooth=0.200 min=1.000 max=1.100 invert=0 offsetMs=0
+I/VidVizEngine(12796): [AR_NATIVE] apply frame=120 id=ar_1769436388961969 audio=0.180 prev=0.233 smooth=0.200 level=0.220 value=1.022 path=/storage/emulated/0/Alarms/Rihanna Don t Stop The Music MrRevillz Remix.mp3 localMs=4000
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+I/VidVizEngine(12796): [AR_NATIVE] frame=130 id=ar_1769436388961969 target=ast_1769436377599574 type=scale freq=all sens=1.200 smooth=0.200 min=1.000 max=1.100 invert=0 offsetMs=0
+I/VidVizEngine(12796): [AR_NATIVE] apply frame=130 id=ar_1769436388961969 audio=0.171 prev=0.184 smooth=0.200 level=0.201 value=1.020 path=/storage/emulated/0/Alarms/Rihanna Don t Stop The Music MrRevillz Remix.mp3 localMs=4333
+I/VidVizEngine(12796): [AR_NATIVE] frame=140 id=ar_1769436388961969 target=ast_1769436377599574 type=scale freq=all sens=1.200 smooth=0.200 min=1.000 max=1.100 invert=0 offsetMs=0
+I/VidVizEngine(12796): [AR_NATIVE] apply frame=140 id=ar_1769436388961969 audio=0.234 prev=0.256 smooth=0.200 level=0.276 value=1.028 path=/storage/emulated/0/Alarms/Rihanna Don t Stop The Music MrRevillz Remix.mp3 localMs=4667
+D/ViewRootImpl[MainActivity](12796): processMotionEvent MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=691.0, y[0]=1816.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443257112, downTime=443257112, deviceId=-1, source=0x5002, displayId=0 }
+D/ViewRootImpl[MainActivity](12796): dispatchPointerEvent handled=true, event=MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=691.0, y[0]=1816.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443257112, downTime=443257112, deviceId=-1, source=0x5002, displayId=0 }
+I/VidVizEngine(12796): [AR_NATIVE] frame=150 id=ar_1769436388961969 target=ast_1769436377599574 type=scale freq=all sens=1.200 smooth=0.200 min=1.000 max=1.100 invert=0 offsetMs=0
+I/VidVizEngine(12796): [AR_NATIVE] apply frame=150 id=ar_1769436388961969 audio=0.123 prev=0.172 smooth=0.200 level=0.153 value=1.015 path=/storage/emulated/0/Alarms/Rihanna Don t Stop The Music MrRevillz Remix.mp3 localMs=5000
+D/ViewRootImpl[MainActivity](12796): processMotionEvent MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=691.0, y[0]=1816.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443257265, downTime=443257112, deviceId=-1, source=0x5002, displayId=0 }
+D/ViewRootImpl[MainActivity](12796): dispatchPointerEvent handled=true, event=MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=691.0, y[0]=1816.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=443257265, downTime=443257112, deviceId=-1, source=0x5002, displayId=0 }
+E/FrameEvents(12796): updateAcquireFence: Did not find frame.
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+I/VidVizEngine(12796): [AR_NATIVE] frame=160 id=ar_1769436388961969 target=ast_1769436377599574 type=scale freq=all sens=1.200 smooth=0.200 min=1.000 max=1.100 invert=0 offsetMs=0
+I/VidVizEngine(12796): [AR_NATIVE] apply frame=160 id=ar_1769436388961969 audio=0.140 prev=0.166 smooth=0.200 level=0.168 value=1.017 path=/storage/emulated/0/Alarms/Rihanna Don t Stop The Music MrRevillz Remix.mp3 localMs=5333
+I/flutter (12796): 🛑 Export cancellation requested
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3
+D/ACodec  (12796): [OMX.qcom.video.encoder.avc] Now Executing->Idle
+D/ACodec  (12796): [OMX.qcom.video.encoder.avc] Now Idle->Loaded
+D/ACodec  (12796): [OMX.qcom.video.encoder.avc] Now Loaded
+D/MPEG4Writer(12796): reset()
+D/MPEG4Writer(12796): Video track stopping. Stop source
+D/MPEG4Writer(12796): Video track source stopping
+V/MediaWriter(12796): Track event err/info msg:101, trackId:1, type:1000,val:-1011
+D/MPEG4Writer(12796): Video track source stopped
+I/MPEG4Writer(12796): Received total/0-length (160/0) buffers and encoded 160 frames. - Video
+D/MPEG4Writer(12796): Video track stopped. Status:0. Stop source
+D/MPEG4Writer(12796): 0 chunks are written in the last batch
+D/MPEG4Writer(12796): WriterThread stopped. Status:0
+I/MPEG4Writer(12796): Adjust the moov start time from 0 us -> 0 us
+I/MPEG4Writer(12796): MOOV atom was written to the file
+D/MPEG4Writer(12796): release()
+D/MPEG4Writer(12796): MP4WtrCtrlHlpLooper stopped
+D/MPEG4Writer(12796): Top 5 write durations(microseconds): #1:301 #2:311 #3:313 #4:407 #5:672
+D/ACodec  (12796): Now uninitialized
+D/OplusACodec(12796): ~OplusACodec [127]: 
+I/ACodec  (12796): ~ACodec()
+D/MPEG4Writer(12796): reset()
+D/MPEG4Writer(12796): Video track stopping. Stop source
+E/MPEG4Writer(12796): Stop() called but track is not started or stopped
+I/VidVizEngine(12796): MediaCodecEncoder shutdown
+I/VidVizEngine(12796): Encoder cancelled
+I/VidVizEngine(12796): Render loop finished. Frames: 161, Duration: 3811ms, FPS: 42.2
+D/VidVizEngine(12796): All shaders cleared
+I/VidVizEngine(12796): Cancelled output removed: /storage/emulated/0/Download/vidviz/vidviz_20260126_170638.mp4
+I/VidVizEngine(12796): Job cancelled
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 Native export cancelled
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 ⏭️ Skipping duplicate snapshot
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ ⛔ Native export failed: Cancelled
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 [AudioPerf][Export] failed jobId=export_1769436398787 err=Cancelled
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): ! Native engine returned null
+I/flutter (12796): ┌───────────────────────────────────────────────────────────────────────────────
+I/flutter (12796): │ 💡 ⏭️ Skipping duplicate snapshot
+I/flutter (12796): └───────────────────────────────────────────────────────────────────────────────
+D/AudioManager(12796): getStreamVolume packageName=com.vidviz.app, index=4, streamType=3

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+    width="1024px" height="1024px"
+    viewBox="0 0 1668.56 1221.19"
+    xml:space="preserve">
+
+  <!-- Dış yuvarlatılmış arka plan (1024x1024, tam ortalı) -->
+    <rect
+        x="320.0"
+        y="100.0"
+        width="1024"
+        height="1024"
+        rx="256"
+        ry="256"
+        fill="#020202"
+    />
+
+    <!-- Logo (BOZULMADI) -->
+    <path
+        d="M491.03 374.75 721.1 682.38 489.58 932.49h52.11l202.7-218.98 163.77 218.98h177.32L842.46 607.56l215.5-232.81h-52.11L819.18 576.42 668.35 374.75zm76.63 38.39h81.46l359.72 480.97h-81.46z"
+        fill="#fff"
+        transform="translate(52.39 -25.059)"
+    />
+
+</svg>

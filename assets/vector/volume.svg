@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round">
+
+    <!-- Hoparlör Gövdesi (Tek parça, temiz) -->
+    <path d="M11 5L6 9H2V15H6L11 19V5Z"/>
+
+    <!-- Ses Dalgaları (2 tane - Yüksek) -->
+    <path d="M14.54 8.46a5 5 0 0 1 0 7.07"/>
+    <path d="M17.07 4.93a10 10 0 0 1 0 14.14"/>
+
+</svg>
