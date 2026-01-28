@@ -2,6 +2,34 @@ part of 'package:vidviz/service/director_service.dart';
 
 extension PlaybackFunction on DirectorService {
 
+  bool get canPlayNow {
+    final bool hasRaster = hasRasterAssets();
+    final bool hasAudioAtPos = mainAudioLayerForPosition(position) != -1;
+    return hasRaster || hasAudioAtPos;
+  }
+
+  bool get canExportNow => duration > 0;
+
+  int _resolveMainLayerForPlayback(int pos) {
+    if (layers == null || layers!.isEmpty) return -1;
+
+    final int mainRaster = getMainRasterLayerIndex();
+    if (mainRaster >= 0 && mainRaster < layers!.length) {
+      final Layer l = layers![mainRaster];
+      bool hasRasterAtPos = false;
+      for (final a in l.assets) {
+        if (!a.deleted && a.begin <= pos && pos < a.begin + a.duration) {
+          hasRasterAtPos = true;
+          break;
+        }
+      }
+      if (hasRasterAtPos) return mainRaster;
+    }
+
+    final int audioMain = mainAudioLayerForPosition(pos);
+    return audioMain;
+  }
+
   play() async {
     if (filesNotExist) {
       _filesNotExist.add(true);
@@ -16,64 +44,32 @@ extension PlaybackFunction on DirectorService {
     _appBar.add(true);
     _selected.add(Selected(-1, -1));
 
-    int mainLayer = getMainRasterLayerIndex();
+    final int mainLayer = _resolveMainLayerForPlayback(position);
+    if (mainLayer == -1) {
+      print('⚠️ No raster and no audio at position $position, cannot start playback');
+      isPlaying = false;
+      _appBar.add(true);
+      try {
+        scrollController.addListener(_listenerScrollController);
+      } catch (_) {}
+      return;
+    }
     mainLayerIndexForConcurrency = mainLayer;
     print('mainLayer: $mainLayer');
+    if (layers != null &&
+        mainLayer >= 0 &&
+        mainLayer < layers!.length &&
+        layers![mainLayer].type == 'audio') {
+      print('🎧 Audio-driven playback: mainLayer set to audio index $mainLayer');
+    }
 
     Future<void>? mainFuture;
-    // Guard: if main raster has no media at current position, fall back to audio layer clock
-    if (layers != null && mainLayer >= 0 && mainLayer < layers!.length) {
-      final Layer mainL = layers![mainLayer];
-
-      bool hasRasterAtPos = false;
-      for (final a in mainL.assets) {
-        if (!a.deleted &&
-            a.begin <= position &&
-            position < a.begin + a.duration) {
-          hasRasterAtPos = true;
-          break;
-        }
-      }
-      if (!hasRasterAtPos) {
-        final int audioMain = mainAudioLayerForPosition(position);
-        if (audioMain != -1) {
-          mainLayer = audioMain; // drive playback by an audio layer
-          mainLayerIndexForConcurrency = mainLayer;
-          print(
-            '🎧 Audio-driven playback: mainLayer set to audio index $audioMain',
-          );
-        } else {
-          print('⚠️ No raster and no audio at position $position, cannot start playback');
-          isPlaying = false;
-          _appBar.add(true);
-          try {
-            scrollController.addListener(_listenerScrollController);
-          } catch (_) {}
-          return;
-        }
-      }
-    }
-
-    if (mainLayer == -1) {
-      final int audioMain = mainAudioLayerForPosition(position);
-      if (audioMain == -1) {
-        print('⚠️ No raster and no audio at position $position, cannot start playback');
-        isPlaying = false;
-        _appBar.add(true);
-        try {
-          scrollController.addListener(_listenerScrollController);
-        } catch (_) {}
-        return;
-      }
-      mainLayer = audioMain;
-      mainLayerIndexForConcurrency = mainLayer;
-      print('🎧 Audio-driven playback: mainLayer set to audio index $audioMain');
-    }
 
     isPlaying = true;
     for (int i = 0; i < layers!.length; i++) {
       final String ltype = layers![i].type;
       final bool isMedia = (ltype == 'raster' || ltype == 'audio');
+
       if (!isMedia) continue;
 
       if (i == mainLayer) {

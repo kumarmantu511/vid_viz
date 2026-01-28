@@ -125,10 +125,7 @@ class VideoFooter extends StatelessWidget {
           stream: directorService.appBar$,
           initialData: false,
           builder: (BuildContext context, AsyncSnapshot<bool> snapshot) {
-            final bool hasRasterAssets = directorService.hasRasterAssets();
-            final bool hasAudioAtPos =
-                directorService.mainAudioLayerForPosition(directorService.position) != -1;
-            final bool canPlayNow = hasRasterAssets || hasAudioAtPos;
+            final bool canPlayNow = directorService.canPlayNow;
             final bool isPlaying = directorService.isPlaying;
 
             return IconButton(
@@ -238,7 +235,7 @@ class VideoFooter extends StatelessWidget {
             initialData: false,
             builder: (BuildContext context, AsyncSnapshot<bool?> snapshot) {
               final hasAssets = directorService.hasRasterAssets();
-              final bool canExport = directorService.duration > 0;
+              final bool canExport = directorService.canExportNow;
               return Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -359,10 +356,7 @@ class VideoFooter extends StatelessWidget {
                 stream: directorService.appBar$,
                 initialData: false,
                 builder: (BuildContext context, AsyncSnapshot<bool> snapshot) {
-                  final bool hasRasterAssets = directorService.hasRasterAssets();
-                  final bool hasAudioAtPos =
-                      directorService.mainAudioLayerForPosition(directorService.position) != -1;
-                  final bool canPlayNow = hasRasterAssets || hasAudioAtPos;
+                  final bool canPlayNow = directorService.canPlayNow;
                   final bool isPlaying = directorService.isPlaying;
 
                   return SizedBox(

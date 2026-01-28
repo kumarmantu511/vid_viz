@@ -74,7 +74,7 @@ class EditorHeader extends StatelessWidget {
             initialData: false,
             builder: (BuildContext context, AsyncSnapshot<bool?> snapshot) {
               final bool hasRasterAssets = directorService.hasRasterAssets();
-              final bool canExport = directorService.duration > 0;
+              final bool canExport = directorService.canExportNow;
               return Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
