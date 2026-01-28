@@ -148,6 +148,14 @@ extension TimelineFunction on DirectorService {
       assetBefore,
     );
 
+    // Keep LayerPlayer indices in sync with asset list insertion
+    if (layerPlayers.length > selected.layerIndex &&
+        layerPlayers[selected.layerIndex] != null) {
+      await layerPlayers[selected.layerIndex]!.onAssetInserted(
+        selected.assetIndex,
+      );
+    }
+
     assetBefore.duration = diff;
     assetAfter.begin = assetBefore.begin + diff;
     assetAfter.cutFrom = assetBefore.cutFrom + diff;
@@ -177,6 +185,7 @@ extension TimelineFunction on DirectorService {
     }
     */
     _layersChanged.add(true);
+    _position.add(position);
 
     // Regenerate thumbnails for video assets
     if (assetAfter.type == AssetType.video) {
@@ -346,23 +355,6 @@ extension TimelineFunction on DirectorService {
       if (layer.type == 'raster' && layer.assets.isNotEmpty) return true;
     }
     return false;
-  }
-
-  bool hasAudioAssets() {
-    if (layers == null) return false;
-    for (final layer in layers!) {
-      if (layer.type != 'audio') continue;
-      for (final a in layer.assets) {
-        if (!a.deleted && a.type == AssetType.audio && a.duration > 0) {
-          return true;
-        }
-      }
-    }
-    return false;
-  }
-
-  bool hasPlayableAssets() {
-    return hasRasterAssets() || hasAudioAssets();
   }
 
 }

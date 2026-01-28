@@ -126,11 +126,13 @@ class VideoFooter extends StatelessWidget {
           initialData: false,
           builder: (BuildContext context, AsyncSnapshot<bool> snapshot) {
             final bool hasRasterAssets = directorService.hasRasterAssets();
-            final bool hasPlayableAssets = directorService.hasPlayableAssets();
+            final bool hasAudioAtPos =
+                directorService.mainAudioLayerForPosition(directorService.position) != -1;
+            final bool canPlayNow = hasRasterAssets || hasAudioAtPos;
             final bool isPlaying = directorService.isPlaying;
 
             return IconButton(
-              onPressed: hasPlayableAssets
+              onPressed: canPlayNow
                   ? () {
                 if (isPlaying) {
                   directorService.stop();
@@ -141,7 +143,7 @@ class VideoFooter extends StatelessWidget {
                   : null,
               icon: SvgIcon(
                 asset:  isPlaying ? 'pause' : 'play',
-                color: hasPlayableAssets ? app_theme.accent : disabledIconColor,
+                color: canPlayNow ? app_theme.accent : disabledIconColor,
                 size: safeIconSize,
                 //fill: 1.0,
                 //weight: 700,
@@ -236,6 +238,7 @@ class VideoFooter extends StatelessWidget {
             initialData: false,
             builder: (BuildContext context, AsyncSnapshot<bool?> snapshot) {
               final hasAssets = directorService.hasRasterAssets();
+              final bool canExport = directorService.duration > 0;
               return Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -285,7 +288,7 @@ class VideoFooter extends StatelessWidget {
                     height: 36, // 🔽 alt–üst boşluk burada kontrol edilir
                     child: IconButton(
                       visualDensity: VisualDensity.compact,
-                      onPressed: hasAssets
+                      onPressed: canExport
                           ? () {
                         showModalBottomSheet(
                           context: context,
@@ -307,9 +310,9 @@ class VideoFooter extends StatelessWidget {
                       icon: SvgIcon(
                         asset: 'export',
                         size: 22,
-                        color: hasAssets ? app_theme.accent : disabledIconColor,
+                        color: canExport ? app_theme.accent : disabledIconColor,
                       ),
-                      tooltip: hasAssets ? loc.editorHeaderExportTooltip : loc.editorHeaderAddVideoFirstTooltip,
+                      tooltip: canExport ? loc.editorHeaderExportTooltip : loc.editorHeaderAddVideoFirstTooltip,
                     ),
                   ),
                   SizedBox(width: 70,)
@@ -357,14 +360,16 @@ class VideoFooter extends StatelessWidget {
                 initialData: false,
                 builder: (BuildContext context, AsyncSnapshot<bool> snapshot) {
                   final bool hasRasterAssets = directorService.hasRasterAssets();
-                  final bool hasPlayableAssets = directorService.hasPlayableAssets();
+                  final bool hasAudioAtPos =
+                      directorService.mainAudioLayerForPosition(directorService.position) != -1;
+                  final bool canPlayNow = hasRasterAssets || hasAudioAtPos;
                   final bool isPlaying = directorService.isPlaying;
 
                   return SizedBox(
                     height: 36, // 🔽 alt–üst boşluk burada kontrol edilir
                     child: IconButton(
                       visualDensity: VisualDensity.compact,
-                      onPressed: hasPlayableAssets ? () {
+                      onPressed: canPlayNow ? () {
                         if (isPlaying) {
                           directorService.stop();
                         } else {
@@ -373,7 +378,7 @@ class VideoFooter extends StatelessWidget {
                       } : null,
                       icon: SvgIcon(
                         asset:  isPlaying ? 'pause' : 'play',
-                        color: hasPlayableAssets ? app_theme.accent : disabledIconColor,
+                        color: canPlayNow ? app_theme.accent : disabledIconColor,
                         size: 22,
                       ),
                     ),

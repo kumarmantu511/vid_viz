@@ -10,15 +10,15 @@ namespace vidviz {
 namespace ios {
 namespace text {
 
-static inline float vvClamp(float v, float lo, float hi) {
+static inline float vvTextRasterClamp(float v, float lo, float hi) {
     if (!std::isfinite(v)) return lo;
     if (v < lo) return lo;
     if (v > hi) return hi;
     return v;
 }
 
-static inline float vvClamp01(float v) {
-    return vvClamp(v, 0.0f, 1.0f);
+static inline float vvTextRasterClamp01(float v) {
+    return vvTextRasterClamp(v, 0.0f, 1.0f);
 }
 
 static inline void vvArgbToRgba01(int64_t argb, CGFloat& r, CGFloat& g, CGFloat& b, CGFloat& a) {
@@ -148,11 +148,11 @@ bool rasterizeTextBitmap(
     if (p.box) {
         bleed = std::max(bleed, std::max(0.0f, p.boxBorderW) * 0.5f);
     }
-    bleed = vvClamp(bleed, 0.0f, 80.0f);
+    bleed = vvTextRasterClamp(bleed, 0.0f, 80.0f);
 
     int pad = 0;
     if (p.padPx >= 0.0f && std::isfinite(p.padPx)) {
-        const float pp = vvClamp(p.padPx, 0.0f, 200.0f);
+        const float pp = vvTextRasterClamp(p.padPx, 0.0f, 200.0f);
         pad = vvRoundInt(pp);
     } else {
         pad = static_cast<int>(std::ceil(bleed)) + 6;
@@ -160,7 +160,7 @@ bool rasterizeTextBitmap(
 
     int boxPad = 0;
     if (p.box) {
-        boxPad = static_cast<int>(std::ceil(vvClamp(p.boxPad, 0.0f, 1024.0f)));
+        boxPad = static_cast<int>(std::ceil(vvTextRasterClamp(p.boxPad, 0.0f, 1024.0f)));
     }
 
     const int w = std::min(4096, static_cast<int>(std::ceil(bw)) + pad * 2 + boxPad * 2);
@@ -305,11 +305,11 @@ bool rasterizeTextBitmap(
         if (spd < 0.2f) spd = 0.2f;
         if (spd > 2.0f) spd = 2.0f;
         float prog = std::fmod(std::max(0.0f, timeSec * spd), 1.0f);
-        prog = vvClamp01(prog);
+        prog = vvTextRasterClamp01(prog);
         const int step = static_cast<int>(std::lround(prog * 30.0f));
         const float q = static_cast<float>(std::max(0, std::min(30, step))) / 30.0f;
         float blurR = (1.0f - q) * 12.0f;
-        blurR = vvClamp(blurR, 0.0f, 32.0f);
+        blurR = vvTextRasterClamp(blurR, 0.0f, 32.0f);
 
         CGFloat r = fr, g = fg, b = fb, a = fa;
         CGContextSaveGState(ctx);

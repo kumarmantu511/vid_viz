@@ -46,24 +46,23 @@ class TimelinePlayer extends StatelessWidget {
 
         // Helper to build content stack
         Widget buildContent() {
-          if (mainIdx < 0 ||
-              directorService.layerPlayers.length == 0 ||
-              mainIdx >= directorService.layerPlayers.length ||
-              directorService.layerPlayers[mainIdx] == null) {
-            return Container(color: Color(vs.backgroundColor));
+          final bool hasMainRaster =
+              mainIdx >= 0 &&
+              directorService.layerPlayers.isNotEmpty &&
+              mainIdx < directorService.layerPlayers.length &&
+              directorService.layerPlayers[mainIdx] != null &&
+              directorService.layers != null &&
+              directorService.layers!.isNotEmpty &&
+              mainIdx < directorService.layers!.length;
+
+          int assetIndex = -1;
+          AssetType? type;
+          if (hasMainRaster) {
+            assetIndex = directorService.layerPlayers[mainIdx]!.currentAssetIndex;
+            if (assetIndex >= 0 && assetIndex < directorService.layers![mainIdx].assets.length) {
+              type = directorService.layers![mainIdx].assets[assetIndex].type;
+            }
           }
-
-          int assetIndex = directorService.layerPlayers[mainIdx]!.currentAssetIndex;
-
-          if (assetIndex == -1 ||
-              directorService.layers == null ||
-              directorService.layers!.isEmpty ||
-              mainIdx >= directorService.layers!.length ||
-              assetIndex >= directorService.layers![mainIdx].assets.length) {
-            return Container(color: Color(vs.backgroundColor));
-          }
-
-          AssetType type = directorService.layers![mainIdx].assets[assetIndex].type;
 
           return Stack(
             clipBehavior: Clip.hardEdge,
@@ -79,8 +78,11 @@ class TimelinePlayer extends StatelessWidget {
                     /// Video/Image layer
                     Builder(
                       builder: (_) {
+                        if (!hasMainRaster || type == null) {
+                          return const SizedBox.shrink();
+                        }
+
                         final vc = directorService.layerPlayers[mainIdx]!.videoController;
-                        final Asset asset = directorService.layers![mainIdx].assets[assetIndex];
                         bool canRenderVideo = false;
                         if (type == AssetType.video && vc != null) {
                           try {
@@ -93,20 +95,7 @@ class TimelinePlayer extends StatelessWidget {
 
                         Widget media;
                         if (type == AssetType.video) {
-                          final String? thumb = asset.thumbnailMedPath ?? asset.thumbnailPath;
-                          final bool hasThumb = (thumb != null && File(thumb).existsSync());
-                          media = Stack(
-                            fit: StackFit.expand,
-                            children: [
-                              if (hasThumb)
-                                Image.file(
-                                  File(thumb!),
-                                  fit: BoxFit.cover,
-                                  gaplessPlayback: true,
-                                ),
-                              if (canRenderVideo) VideoPlayer(vc!),
-                            ],
-                          );
+                          media = canRenderVideo ? VideoPlayer(vc!) : const SizedBox.shrink();
                         } else {
                           media = _ImagePlayer(directorService.layers![mainIdx].assets[assetIndex], mainIdx,);
                         }

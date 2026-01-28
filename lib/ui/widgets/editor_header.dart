@@ -73,7 +73,8 @@ class EditorHeader extends StatelessWidget {
             stream: directorService.layersChanged$,
             initialData: false,
             builder: (BuildContext context, AsyncSnapshot<bool?> snapshot) {
-              final hasAssets = directorService.hasRasterAssets();
+              final bool hasRasterAssets = directorService.hasRasterAssets();
+              final bool canExport = directorService.duration > 0;
               return Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -81,7 +82,7 @@ class EditorHeader extends StatelessWidget {
                   // Archive (Import/Export .vvz)
                   IconButton(
                     onPressed: () {
-                      if (hasAssets){
+                      if (hasRasterAssets){
                         showModalBottomSheet(
                           context: context,
                           backgroundColor: Colors.transparent,
@@ -94,7 +95,7 @@ class EditorHeader extends StatelessWidget {
                     icon: SvgIcon(
                       asset: 'save_library',
                       size: 22,
-                      color: hasAssets ? app_theme.primary : disabledIconColor,
+                      color: hasRasterAssets ? app_theme.primary : disabledIconColor,
                     ),
                     tooltip: loc.editorHeaderArchiveTooltip,
                   ),
@@ -120,7 +121,7 @@ class EditorHeader extends StatelessWidget {
                     height: 36,
                     margin: EdgeInsets.only(right: 4),
                     decoration: BoxDecoration(
-                      gradient: hasAssets ? app_theme.neonButtonGradient : LinearGradient(colors: [Color(0xFF7BB6BD), Color(0xFF7E97BD)],),
+                      gradient: canExport ? app_theme.neonButtonGradient : LinearGradient(colors: [Color(0xFF7BB6BD), Color(0xFF7E97BD)],),
                       borderRadius: BorderRadius.circular(10),
                       boxShadow: [
                         BoxShadow(
@@ -131,7 +132,7 @@ class EditorHeader extends StatelessWidget {
                       ],
                     ),
                     child: IconButton(
-                      onPressed: hasAssets ? () {
+                      onPressed: canExport ? () {
                         showModalBottomSheet(
                           context: context,
                           useSafeArea: true,
@@ -161,7 +162,7 @@ class EditorHeader extends StatelessWidget {
                             ),
                           ],
                         ),
-                      tooltip: hasAssets ? loc.editorHeaderExportTooltip : loc.editorHeaderAddVideoFirstTooltip,
+                      tooltip: canExport ? loc.editorHeaderExportTooltip : loc.editorHeaderAddVideoFirstTooltip,
                     ),
                   ),
                 ],

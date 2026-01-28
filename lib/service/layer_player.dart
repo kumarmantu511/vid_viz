@@ -108,6 +108,7 @@ class LayerPlayer {
   /// Preview video at specific position without sound
   Future<void> preview(int position) async {
     try {
+      final prevController = _videoController;
       final assetInfo = _getAssetAtPosition(position);
       if (assetInfo == null) {
         print('🔍 [LayerPlayer] No asset found at position $position');
@@ -143,6 +144,23 @@ class LayerPlayer {
         }
       } catch (_) {}
       await _seekToPosition(fileSeek);
+
+      // Ensure preview is always paused. Some platforms keep the last rendered frame
+      // until the next decode tick; pausing here prevents runaway playback.
+      try {
+        await _videoController?.pause();
+      } catch (_) {}
+
+      // If we switched underlying controller (e.g., scrubbing across different files),
+      // force one decode tick so the displayed frame matches the seek position.
+      final bool switchedController = prevController != null && prevController != _videoController;
+      if (switchedController) {
+        try {
+          await _videoController?.play();
+          await Future.delayed(const Duration(milliseconds: 16));
+          await _videoController?.pause();
+        } catch (_) {}
+      }
       // Prime a frame to avoid black screen during scrubbing
       ///DAHA ÇOK TAKILAM SEBEBİ OLUYORDU
       ///try {
@@ -795,6 +813,13 @@ class LayerPlayer {
     try {
       print("➖ [LayerPlayer] Removing media source at index $index");
 
+      // Keep preloaded controller index consistent with list mutations
+      if (_preloadedIndex == index) {
+        await _disposePreloaded();
+      } else if (_preloadedIndex > index) {
+        _preloadedIndex--;
+      }
+
       // If this was the currently playing asset, stop and reset
       if (index == currentAssetIndex) {
         await stop();
@@ -808,6 +833,19 @@ class LayerPlayer {
     } catch (e) {
       print('🚨 [LayerPlayer] Error removing media source: $e');
     }
+  }
+
+  /// Notify player that an asset was inserted into [layer.assets] at [index].
+  /// This keeps internal indices (current/preloaded) consistent.
+  Future<void> onAssetInserted(int index) async {
+    try {
+      if (index <= currentAssetIndex) {
+        currentAssetIndex++;
+      }
+      if (_preloadedIndex >= index) {
+        await _disposePreloaded();
+      }
+    } catch (_) {}
   }
 
   /// Dispose all resources and clean up

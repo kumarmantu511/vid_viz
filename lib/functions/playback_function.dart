@@ -7,6 +7,7 @@ extension PlaybackFunction on DirectorService {
       _filesNotExist.add(true);
       return;
     }
+
     if (isOperating) return;
     if (position >= duration) return;
     logger.i('DirectorService.play()');
@@ -19,10 +20,8 @@ extension PlaybackFunction on DirectorService {
     mainLayerIndexForConcurrency = mainLayer;
     print('mainLayer: $mainLayer');
 
-    final bool allowAudioFallback = audioOnlyPlay || !hasRasterAssets();
-
     Future<void>? mainFuture;
-    // Guard: if main raster has no media at current position, optionally fall back to audio-only
+    // Guard: if main raster has no media at current position, fall back to audio layer clock
     if (layers != null && mainLayer >= 0 && mainLayer < layers!.length) {
       final Layer mainL = layers![mainLayer];
 
@@ -36,28 +35,15 @@ extension PlaybackFunction on DirectorService {
         }
       }
       if (!hasRasterAtPos) {
-        if (allowAudioFallback) {
-          final int audioMain = mainAudioLayerForPosition(position);
-          if (audioMain != -1) {
-            mainLayer = audioMain; // drive playback by an audio layer
-            mainLayerIndexForConcurrency = mainLayer;
-            print(
-              '🎧 Audio-only playback: mainLayer set to audio index $audioMain',
-            );
-
-          } else {
-            print('⚠️ No audio at position $position, cannot start playback');
-            isPlaying = false;
-            _appBar.add(true);
-            try {
-              scrollController.addListener(_listenerScrollController);
-            } catch (_) {}
-            return;
-          }
-        } else {
+        final int audioMain = mainAudioLayerForPosition(position);
+        if (audioMain != -1) {
+          mainLayer = audioMain; // drive playback by an audio layer
+          mainLayerIndexForConcurrency = mainLayer;
           print(
-            '⚠️ Prevented audio-only playback: no raster at position $position',
+            '🎧 Audio-driven playback: mainLayer set to audio index $audioMain',
           );
+        } else {
+          print('⚠️ No raster and no audio at position $position, cannot start playback');
           isPlaying = false;
           _appBar.add(true);
           try {
@@ -69,23 +55,9 @@ extension PlaybackFunction on DirectorService {
     }
 
     if (mainLayer == -1) {
-      if (allowAudioFallback) {
-        final int audioMain = mainAudioLayerForPosition(position);
-        if (audioMain == -1) {
-          print('⚠️ No raster and no audio at position $position, cannot start playback');
-          isPlaying = false;
-          _appBar.add(true);
-
-          try {
-            scrollController.addListener(_listenerScrollController);
-          } catch (_) {}
-          return;
-        }
-        mainLayer = audioMain;
-        mainLayerIndexForConcurrency = mainLayer;
-        print('🎧 Audio-only playback: mainLayer set to audio index $audioMain');
-      } else {
-        print('⚠️ No raster main layer available, cannot start playback');
+      final int audioMain = mainAudioLayerForPosition(position);
+      if (audioMain == -1) {
+        print('⚠️ No raster and no audio at position $position, cannot start playback');
         isPlaying = false;
         _appBar.add(true);
         try {
@@ -93,6 +65,9 @@ extension PlaybackFunction on DirectorService {
         } catch (_) {}
         return;
       }
+      mainLayer = audioMain;
+      mainLayerIndexForConcurrency = mainLayer;
+      print('🎧 Audio-driven playback: mainLayer set to audio index $audioMain');
     }
 
     isPlaying = true;
@@ -107,23 +82,15 @@ extension PlaybackFunction on DirectorService {
           onMove: (int newPosition) {
             _position.add(newPosition);
 
-            final double maxOffset =
-                (scrollController.hasClients)
-                    ? scrollController.position.maxScrollExtent
-                    : double.infinity;
-            final double primaryTarget =
-                ((300 + newPosition) / 1000 * pixelsPerSecond)
-                    .clamp(0.0, maxOffset);
-
             try {
               scrollController.animateTo(
-                primaryTarget,
+                (300 + newPosition) / 1000 * pixelsPerSecond,
                 duration: Duration(milliseconds: 100),
                 curve: Curves.linear,
               );
             } catch (_) {
               scrollController.animateTo(
-                primaryTarget,
+                (newPosition / 1000.0) * pixelsPerSecond,
                 duration: Duration(milliseconds: 1),
                 curve: Curves.linear,
               );
@@ -132,12 +99,9 @@ extension PlaybackFunction on DirectorService {
           },
           onEnd: () {
             scheduleMicrotask(() async {
+              await _stopAllPlayers();
               final int endPos = duration > 0 ? duration - 1 : 0;
               await previewAt(endPos);
-              try {
-                await Future.delayed(const Duration(milliseconds: 16));
-              } catch (_) {}
-              await _stopAllPlayers();
             });
           },
         );
@@ -166,16 +130,21 @@ extension PlaybackFunction on DirectorService {
     if (filesNotExist) return;
     if (layers == null || layers!.isEmpty || layerPlayers.isEmpty) return;
     final mainIdx = getMainRasterLayerIndex();
-    if (mainIdx < 0 ||
-        mainIdx >= layerPlayers.length ||
-        layerPlayers[mainIdx] == null)
-      return;
     isPreviewing = true;
     scrollController.removeListener(_listenerScrollController);
-    await layerPlayers[mainIdx]!.preview(positionMs);
-    _position.add(positionMs);
-    scrollController.addListener(_listenerScrollController);
-    isPreviewing = false;
+    try {
+      if (mainIdx >= 0 &&
+          mainIdx < layerPlayers.length &&
+          layerPlayers[mainIdx] != null) {
+        await layerPlayers[mainIdx]!.preview(positionMs);
+      }
+      _position.add(positionMs);
+    } finally {
+      try {
+        scrollController.addListener(_listenerScrollController);
+      } catch (_) {}
+      isPreviewing = false;
+    }
   }
 
   /// Force-stop all media-bearing players regardless of current flags
